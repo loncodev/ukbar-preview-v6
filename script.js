@@ -1,17 +1,18 @@
 (() => {
   'use strict';
+  const english = document.documentElement.lang.startsWith('en');
   const menuButton = document.querySelector('.menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
   const closeMenu = () => {
     mobileMenu.hidden = true;
     menuButton.setAttribute('aria-expanded', 'false');
-    menuButton.setAttribute('aria-label', 'Abrir menú');
+    menuButton.setAttribute('aria-label', english ? 'Open menu' : 'Abrir menú');
   };
   menuButton.addEventListener('click', () => {
     const expanded = menuButton.getAttribute('aria-expanded') !== 'true';
     mobileMenu.hidden = !expanded;
     menuButton.setAttribute('aria-expanded', String(expanded));
-    menuButton.setAttribute('aria-label', expanded ? 'Cerrar menú' : 'Abrir menú');
+    menuButton.setAttribute('aria-label', expanded ? (english ? 'Close menu' : 'Cerrar menú') : (english ? 'Open menu' : 'Abrir menú'));
   });
   mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
   document.addEventListener('click', event => {

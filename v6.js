@@ -6,6 +6,7 @@
   const sizes = [...root.querySelectorAll('[data-beer-size]')];
   const cards = [...root.querySelectorAll('.v6-tap')];
   const announcer = root.querySelector('#v6-beer-status');
+  const english = document.documentElement.lang.startsWith('en');
   const currency = new Intl.NumberFormat('es-CL', {maximumFractionDigits: 0});
   let profile = 'all';
   let serving = '300';
@@ -31,9 +32,12 @@
       button.classList.toggle('is-selected', active);
       button.setAttribute('aria-pressed', String(active));
     });
-    announcer.textContent = count + (count === 1 ? ' cerveza' : ' cervezas') +
-      ' para explorar · precios de ' + (serving === '300' ? '300 cc' : 'pinta') +
-      ' · consulta disponibilidad actual';
+    announcer.textContent = english
+      ? count + (count === 1 ? ' beer' : ' beers') + ' to explore · ' +
+          (serving === '300' ? '300 ml' : 'pint') + ' menu prices · please confirm current availability'
+      : count + (count === 1 ? ' cerveza' : ' cervezas') +
+          ' para explorar · precios de ' + (serving === '300' ? '300 cc' : 'pinta') +
+          ' · consulta disponibilidad actual';
   }
   filters.forEach(button => button.addEventListener('click', () => {
     profile = button.dataset.beerFilter;
