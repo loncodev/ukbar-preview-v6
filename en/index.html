@@ -25,8 +25,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media=&quot;all&quot;"><noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
   <link rel="preload" href="../assets/hero-v6-mobile.webp" as="image" type="image/webp" media="(max-width: 620px)" fetchpriority="high">
   <link rel="preload" href="../assets/hero-v6.webp" as="image" type="image/webp" media="(min-width: 621px)" fetchpriority="high">
-  <link rel="stylesheet" href="../ukbar.min.css">
-  <script src="../ukbar.min.js" defer></script>
+  <link rel="stylesheet" href="../ukbar.min.css?v=gallery8">
+  <script src="../ukbar.min.js?v=gallery8" defer></script>
   <script type="application/ld+json" id="business-data">{
     "@context":"https://schema.org",
     "@type":"Restaurant",
@@ -243,21 +243,52 @@
       <div class="statement-background" aria-hidden="true"></div>
     </section>
 
-    <section id="galeria" class="gallery section-padding" aria-labelledby="gallery-title">
-      <div class="section-index"><span>04 / THE EXPERIENCE</span><span>REAL PHOTOS OF UK BAR</span></div>
-      <div class="gallery-heading"><h2 id="gallery-title">GOOD BEER.<br>GOOD COMPANY.<br><span>GOOD MUSIC.</span></h2><p>From the first toast to the final song, this is UK Bar: its food, beer and atmosphere.</p></div>
-      <div class="photo-gallery">
-        <figure class="gallery-card gallery-tall"><img loading="lazy" src="../assets/cocktails.webp" alt="Overhead view of colourful cocktails" width="1086" height="1448"><figcaption>THE FIRST ROUND</figcaption></figure>
-        <figure class="gallery-card"><img loading="lazy" src="../assets/burger-fries.webp" alt="Burger and fries at UK Bar" width="896" height="1195"><figcaption>GOOD FOOD</figcaption></figure>
-        <figure class="gallery-card"><img loading="lazy" src="../assets/british-wall.webp" alt="Wall decorated with British pub memorabilia" width="768" height="1376"><figcaption>THE BRITISH CORNER</figcaption></figure>
-        <figure class="gallery-card"><img loading="lazy" src="../assets/chorrillana.webp" alt="Chilean chorrillana served at UK Bar" width="1200" height="1600"><figcaption>MADE TO SHARE</figcaption></figure>
-        <figure class="gallery-card"><img loading="lazy" src="../assets/bartender.webp" alt="Cocktails being prepared at the UK Bar counter" width="1086" height="1448"><figcaption>CHEERS!</figcaption></figure>
+    <section id="galeria" class="gallery section-padding uk-photo-section" aria-labelledby="gallery-title">
+      <div class="section-index"><span>04 / LIFE AT UK BAR</span><span>PHOTOS OF THE PUB AND ITS MENU</span></div>
+      <div class="gallery-heading"><h2 id="gallery-title">THIS IS<br>LIFE <span>AT UK.</span></h2>
+        <p>Food to share, a lively bar and British details in every corner. Explore photographs of the real UK Bar atmosphere.</p></div>
+      <div class="uk-photo-intro"><span>♛ &nbsp; EIGHT VIEWS OF UK BAR</span><span>SELECT A PHOTO TO ENLARGE ↗</span></div>
+      <div class="photo-gallery uk-photo-grid" aria-label="Photos of the pub, food and drinks">
+        <figure class="gallery-card gallery-tall"><button class="gallery-open" type="button"><img loading="lazy" decoding="async" src="../assets/bar-interior.webp" alt="Inside UK Bar with warm lighting" width="900" height="1200"></button><figcaption>INSIDE THE PUB</figcaption></figure>
+        <figure class="gallery-card"><button class="gallery-open" type="button"><img loading="lazy" decoding="async" src="../assets/shops-pair.webp" alt="Two beers in glasses bearing the UK Bar logo" width="660" height="635"></button><figcaption>THE FIRST ROUND</figcaption></figure>
+        <figure class="gallery-card"><button class="gallery-open" type="button"><img loading="lazy" decoding="async" src="../assets/pizza.webp" alt="UK Bar pizza ready to share" width="1000" height="1250"></button><figcaption>PIZZA TO SHARE</figcaption></figure>
+        <figure class="gallery-card"><button class="gallery-open" type="button"><img loading="lazy" decoding="async" src="../assets/british-wall.webp" alt="British pub details and beer taps at UK Bar" width="768" height="1376"></button><figcaption>THE BRITISH CORNER</figcaption></figure>
+        <figure class="gallery-card"><button class="gallery-open" type="button"><img loading="lazy" decoding="async" src="../assets/cocktails.webp" alt="Colourful cocktails served at the bar" width="900" height="1200"></button><figcaption>COCKTAILS</figcaption></figure>
+        <figure class="gallery-card"><button class="gallery-open" type="button"><img loading="lazy" decoding="async" src="../assets/chorrillana.webp" alt="UK Bar chorrillana loaded fries" width="1200" height="1600"></button><figcaption>FOOD TO SHARE</figcaption></figure>
+        <figure class="gallery-card"><button class="gallery-open" type="button"><img loading="lazy" decoding="async" src="../assets/burger-fries.webp" alt="Burger and fries served at UK Bar" width="896" height="1195"></button><figcaption>GOOD FOOD</figcaption></figure>
+        <figure class="gallery-card"><button class="gallery-open" type="button"><img loading="lazy" decoding="async" src="../assets/bartender.webp" alt="Cocktail preparation behind the bar" width="1086" height="1448"></button><figcaption>BEHIND THE BAR</figcaption></figure>
+      </div>
+      <div class="uk-gallery-bottom"><p>Want to come by? Find us at Almirante Montt 129, Valparaíso.</p><a href="#visitanos" class="button pub-outline">COME AND VISIT ↗</a></div>
+    </section>
+    <dialog id="uk-gallery-dialog" class="uk-gallery-dialog" aria-label="Enlarged UK Bar photograph">
+      <div class="uk-gallery-modal-head"><span>♛ UK BAR · GALLERY</span><button class="uk-gallery-close" type="button" aria-label="Close enlarged photograph">CLOSE ×</button></div>
+      <div class="uk-gallery-modal-stage"><button class="uk-gallery-nav" type="button" data-gallery-direction="-1" aria-label="Previous photograph">←</button>
+        <img id="uk-gallery-large" src="../assets/bar-interior.webp" alt="" width="900" height="1200">
+        <button class="uk-gallery-nav" type="button" data-gallery-direction="1" aria-label="Next photograph">→</button></div>
+      <div class="uk-gallery-modal-foot"><p id="uk-gallery-caption"></p><span id="uk-gallery-position" aria-live="polite"></span></div>
+    </dialog>
+
+    <section class="v5-agenda uk-atmosphere" id="ambiente" aria-labelledby="agenda-title">
+      <div class="v5-agenda-heading uk-atmosphere-heading"><span>05 / THE ATMOSPHERE · RECORDED MUSIC</span>
+        <h2 id="agenda-title">THE NIGHT<br>SOUNDS LIKE <em>UK BAR.</em></h2>
+        <p>A well-poured pint, friends around the table and British rock on the playlist. That's a night at UK Bar.</p>
+        <div class="uk-atmosphere-facts">
+          <div><strong>♛</strong><span>BRITISH STYLE</span></div>
+          <div><strong>✳</strong><span>CRAFT BEER</span></div>
+          <div><strong>♫</strong><span>ROCK ON THE PLAYLIST</span></div>
+        </div>
+      </div>
+      <div class="uk-atmosphere-side">
+        <p>Recorded music sets the mood inside the pub. <strong>There are no live bands.</strong> What you'll find is great conversation, food to share and a bar with a distinctive character.</p>
+        <div class="uk-atmosphere-images">
+          <figure><img loading="lazy" decoding="async" src="../assets/beer-pints.webp" alt="UK Bar craft beer glasses" width="1080" height="1080"><figcaption>THE BEER</figcaption></figure>
+          <figure><img loading="lazy" decoding="async" src="../assets/british-wall.webp" alt="Beer taps and British pub decorations" width="768" height="1376"><figcaption>THE IDENTITY</figcaption></figure>
+        </div>
+        <div class="uk-atmosphere-actions"><a href="#galeria" class="button pub-outline">EXPLORE THE GALLERY ↗</a><a href="https://www.instagram.com/ukbarvalpo/" class="button button-red" target="_blank" rel="noopener noreferrer">LATEST ON INSTAGRAM ↗</a></div>
       </div>
     </section>
-
-    <section class="v5-agenda" id="ambiente" aria-labelledby="agenda-title"><div class="v5-agenda-heading"><span>MUSIC SETS THE MOOD</span><h2 id="agenda-title">THE NIGHT<br>SOUNDS LIKE <em>UK BAR.</em></h2></div><div><p>British rock, great conversation and the spirit of Valparaíso. Recorded music sets the atmosphere every night at UK Bar; <strong>we do not host live bands.</strong></p><a href="https://www.instagram.com/ukbarvalpo/" class="button button-red" target="_blank" rel="noopener noreferrer">FIND US ON INSTAGRAM ↗</a></div></section>
     <section id="visitanos" class="visit section-padding">
-      <div class="section-index"><span>05 / VISIT US</span><span>VALPARAÍSO, CHILE</span></div>
+      <div class="section-index"><span>06 / VISIT US</span><span>VALPARAÍSO, CHILE</span></div>
       <div class="visit-grid">
         <div class="visit-left"><span class="eyebrow navy-eyebrow"><span class="eyebrow-line"></span> SEE YOU IN VALPARAÍSO</span><h2>SEE<br>YOU<br><em>AT UK BAR.</em></h2><p>Find us in the heart of Valparaíso. Your next good night starts here.</p><a href="https://www.google.com/maps/search/?api=1&query=UK+Bar+Almirante+Montt+129+Valparaiso" target="_blank" rel="noopener noreferrer" class="button button-blue">GET DIRECTIONS <span aria-hidden="true">↗</span></a></div>
         <div class="visit-details">

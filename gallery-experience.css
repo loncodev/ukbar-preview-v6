@@ -1,0 +1,92 @@
+/* UK Bar V6 · photo editorial and atmosphere. Progressive, bilingual, no fabricated events. */
+html { scroll-behavior:auto; } /* Deep section links should open immediately, even from 10,000px away. */
+#galeria,#ambiente { scroll-margin-top:0; }
+.uk-photo-section { overflow:hidden; }
+.uk-photo-section .gallery-heading { align-items:end; }
+.uk-photo-section .gallery-heading h2 { font-size:clamp(53px,6vw,104px); line-height:.93; }
+.uk-photo-section .gallery-heading p { max-width:420px; color:#f2d3ad; font-weight:600; }
+.uk-photo-intro { display:flex;justify-content:space-between;gap:16px;align-items:center;margin:34px 0 10px;color:#e4b783;font:900 12px/1.4 var(--display);letter-spacing:1.7px; }
+.uk-photo-intro span:last-child { color:#f4d9b5; }
+.uk-photo-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,236px);gap:12px;margin-top:14px; }
+.uk-photo-grid .gallery-card { min-height:0; min-width:0; margin:0; border:2px solid #7d4e36; position:relative; overflow:hidden; background:#27120e; }
+.uk-photo-grid .gallery-tall { grid-row:span 2; }
+.uk-photo-grid .gallery-open { display:block;border:0;padding:0;width:100%;height:100%;position:relative;background:#27120e;cursor:zoom-in;overflow:hidden; }
+.uk-photo-grid .gallery-open:focus-visible { outline:4px solid #ffe2a1;outline-offset:-6px; }
+.uk-photo-grid .gallery-open img { display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transition:transform .35s ease; }
+.uk-photo-grid .gallery-card:hover .gallery-open img,.uk-photo-grid .gallery-open:focus-visible img { transform:scale(1.045); }
+.uk-photo-grid .gallery-card:after { content:"";inset:40% 0 0;pointer-events:none;background:linear-gradient(transparent,#090505de); }
+.uk-photo-grid .gallery-card figcaption { pointer-events:none;bottom:15px;left:17px;right:12px;color:#fff1d4;font:900 clamp(17px,2vw,27px)/1 var(--display);letter-spacing:.35px;text-shadow:0 2px 6px #000c; }
+.uk-gallery-bottom { display:flex;gap:20px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-top:28px;border-top:1px solid #7d4e36;padding-top:23px; }
+.uk-gallery-bottom p { max-width:650px;margin:0;color:#ebcfad;font:600 14px/1.6 var(--body); }
+.uk-gallery-bottom .button { min-height:48px;border:1px solid #ce9d6a;background:#241211;color:#fae3c0;text-decoration:none;padding:13px 20px;font:900 15px var(--display); }
+.uk-gallery-bottom .button:hover { background:#9f2335;color:#fff; }
+
+.uk-gallery-dialog { box-sizing:border-box;max-width:min(1120px,95vw);width:100%;max-height:min(95dvh,930px);margin:auto;border:2px solid #bd825b;padding:15px 18px;background:#110909;color:#fff0d4;box-shadow:0 16px 85px #000c;overflow:auto; }
+.uk-gallery-dialog::backdrop { background:#030202ec; }
+.uk-gallery-modal-head,.uk-gallery-modal-foot { display:flex;gap:15px;justify-content:space-between;align-items:center; }
+.uk-gallery-modal-head { border-bottom:1px solid #84543c;padding-bottom:13px;font:900 12px var(--display);letter-spacing:1.5px;color:#ddb78e; }
+.uk-gallery-close { border:1px solid #ce8e69;padding:10px 17px;background:#b71936;color:#fff;font:900 15px var(--display);cursor:pointer;min-height:44px; }
+.uk-gallery-modal-stage { display:grid;grid-template-columns:50px minmax(0,1fr) 50px;gap:10px;align-items:center;padding:14px 0; }
+.uk-gallery-modal-stage img { display:block;max-width:100%;width:auto;height:auto;max-height:calc(95dvh - 180px);min-height:150px;object-fit:contain;margin:auto;color:#f5e6cc; }
+.uk-gallery-nav { min-height:56px;border:1px solid #9d6c4f;background:#2a1512;color:#ffe1bd;font:900 27px var(--display);cursor:pointer; }
+.uk-gallery-nav:hover { background:#af2340; }
+.uk-gallery-close:focus-visible,.uk-gallery-nav:focus-visible { outline:3px solid #ffe2a1;outline-offset:2px; }
+.uk-gallery-modal-foot { font:900 12px var(--display);color:#ebc495;letter-spacing:1px;border-top:1px solid #84543c;padding-top:12px; }
+.uk-gallery-modal-foot p { margin:0; }
+
+.uk-atmosphere { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.98fr);align-items:center;gap:5%;background:linear-gradient(125deg,#130909f7,#2c100ec9 62%,#140809e8),url(assets/british-wall.webp) center 35%/cover;border-top:4px solid #b92539; }
+.uk-atmosphere:before { opacity:.14; }
+.uk-atmosphere .uk-atmosphere-heading,.uk-atmosphere .uk-atmosphere-side { position:relative;z-index:2;min-width:0; }
+.uk-atmosphere .uk-atmosphere-heading>span { display:block;font:900 12px var(--display);color:#e6bd83;letter-spacing:2.8px; }
+.uk-atmosphere .uk-atmosphere-heading h2 { font-size:clamp(42px,5.2vw,86px);line-height:.96;max-width:720px;margin:25px 0;overflow-wrap:normal; }
+.uk-atmosphere .uk-atmosphere-heading>p,.uk-atmosphere .uk-atmosphere-side>p { max-width:550px;margin:18px 0;color:#f7dec0;font:600 15px/1.8 var(--body); }
+.uk-atmosphere .uk-atmosphere-side>p { margin:0 0 18px; }
+.uk-atmosphere .uk-atmosphere-side>p strong { color:#ffcf9a; }
+.uk-atmosphere-facts { margin-top:28px;display:grid;gap:9px; }
+.uk-atmosphere-facts>div { display:flex;align-items:center;gap:14px;border-bottom:1px solid #a07a5b75;padding:11px 0;color:#f5d4a7;font:900 14px var(--display);letter-spacing:1px; }
+.uk-atmosphere-facts strong { display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;background:#ab1f33;color:#fff;font-size:20px; }
+.uk-atmosphere-images { display:grid;grid-template-columns:1fr 1fr;gap:10px;min-height:245px; }
+.uk-atmosphere-images figure { margin:0;min-width:0;height:255px;position:relative;overflow:hidden;border:2px solid #93623e;background:#241611; }
+.uk-atmosphere-images img { display:block;width:100%;height:100%;object-fit:cover; }
+.uk-atmosphere-images figure:after { content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#000c);pointer-events:none; }
+.uk-atmosphere-images figcaption { position:absolute;bottom:13px;left:11px;z-index:2;color:#fff1cd;font:900 17px var(--display);text-shadow:0 2px 5px #000; }
+.uk-atmosphere-actions { display:flex;gap:11px;flex-wrap:wrap;margin-top:19px; }
+.uk-atmosphere .uk-atmosphere-actions .button { font:900 13px var(--display);min-height:48px;padding:13px 16px;text-decoration:none; }
+.uk-atmosphere .uk-atmosphere-actions .pub-outline { background:#1b0e0deb;color:#fce5c4;border:2px solid #d6b083; }
+.uk-atmosphere .uk-atmosphere-actions .button-red { border:1px solid #ec4b62;background:#c71939;color:#fff; }
+
+@media(max-width:980px) {
+ .uk-photo-grid { grid-template-rows:repeat(3,215px); }
+ .uk-atmosphere { grid-template-columns:1fr;gap:30px;padding:70px 6%; }
+ .uk-atmosphere .uk-atmosphere-heading h2 { font-size:clamp(48px,8vw,80px); }
+ .uk-atmosphere .uk-atmosphere-side>p { max-width:780px; }
+ .uk-atmosphere-images figure { height:290px; }
+}
+@media(max-width:640px) {
+ .uk-photo-section .gallery-heading h2 { font-size:clamp(44px,11.5vw,72px);letter-spacing:-1.5px; }
+ .uk-photo-section .gallery-heading p { margin-top:20px; }
+ .uk-photo-intro { display:grid;gap:6px;margin-top:22px;font-size:10px; }
+ .uk-photo-grid { grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:170px;gap:7px;margin-top:10px; }
+ .uk-photo-grid .gallery-tall { grid-row:span 2; }
+ .uk-photo-grid .gallery-card:last-child { grid-column:span 2; }
+ .uk-photo-grid .gallery-card figcaption { left:9px;bottom:10px;right:7px;font-size:clamp(14px,4vw,21px); }
+ .uk-gallery-bottom { margin-top:18px; }
+ .uk-gallery-bottom .button { width:100%;text-align:center; }
+ .uk-atmosphere { padding:58px 6% 68px;gap:25px; }
+ .uk-atmosphere .uk-atmosphere-heading h2 { font-size:clamp(36px,9.2vw,56px);margin:18px 0; }
+ .uk-atmosphere .uk-atmosphere-heading>p,.uk-atmosphere .uk-atmosphere-side>p { font-size:14px;line-height:1.75; }
+ .uk-atmosphere-facts { margin-top:22px; }
+ .uk-atmosphere-images figure { height:185px; }
+ .uk-atmosphere-images figcaption { font-size:15px; }
+ .uk-atmosphere-actions { flex-direction:column; }
+ .uk-atmosphere-actions .button { width:100%;text-align:center; }
+ .uk-gallery-dialog { padding:9px;max-width:97vw;max-height:92dvh; }
+ .uk-gallery-modal-stage { grid-template-columns:37px minmax(0,1fr) 37px;gap:5px; }
+ .uk-gallery-nav { min-height:45px;font-size:22px; }
+ .uk-gallery-modal-stage img { max-height:calc(92dvh - 180px);min-height:0; }
+ .uk-gallery-close { padding:10px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .uk-photo-grid .gallery-open img { transition:none; }
+ .uk-photo-grid .gallery-card:hover .gallery-open img { transform:none; }
+}
