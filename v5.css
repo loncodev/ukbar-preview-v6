@@ -1,0 +1,152 @@
+/* UK Bar V5 — direct translation of the approved rock-pub visual proposal.
+   Inspired by poster design and the international gastropub benchmark.
+   Real UK Bar beer glasses and photos; functional buttons and menu remain HTML. */
+
+/* Header as editorial dark masthead */
+:root{--v5-cream:#f5e6c9;--v5-red:#d82037;--v5-amber:#e1ad69;--v5-ink:#100a09}
+.site-header{background:#100b0bed;border-bottom:1px solid #bf7c45a0;box-shadow:0 5px 19px #000c;min-height:82px}
+.site-header .brand{gap:11px;min-width:180px}
+.site-header .brand img{height:51px;width:51px;object-fit:cover}
+.site-header .brand-wordmark{font-size:27px;color:var(--v5-cream)}
+.site-header .navigation{gap:21px;margin:auto}
+.site-header .navigation a{font:900 14px var(--display);letter-spacing:1px;white-space:nowrap}
+.site-header .navigation a:first-child{color:var(--v5-red)}
+.site-header .header-action{font:900 13px var(--display);min-height:42px}
+.site-header .header-action span{font-size:18px}
+.proposal-banner{font-size:9px;letter-spacing:1.2px}
+/* The approved layout: a dramatic full-width collage with branded pints to the right */
+.v5-hero{min-height:710px;display:block;background-image:url(assets/hero-v5.webp);background-position:center 50%;background-size:cover;background-repeat:no-repeat;position:relative;overflow:hidden;isolation:isolate}
+.v5-hero:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0a0708c9 0%,#0a07069d 25%,#10090730 61%,transparent 100%);pointer-events:none}
+.v5-hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#070404d6 0%,transparent 26%,transparent 76%,#0b0707b2),radial-gradient(circle at 80% 48%,transparent,#0a050538 70%);pointer-events:none}
+.v5-hero-grain{position:absolute;inset:0;background:url(assets/grain.webp) repeat;opacity:.25;mix-blend-mode:soft-light;pointer-events:none;z-index:-1}
+.v5-hero-content{width:min(925px,68%);padding:92px 0 94px 5.6%;position:relative;z-index:2}
+.v5-eyebrow{font:900 15px var(--display);letter-spacing:4px;color:#e7c79b;text-shadow:0 2px 6px #000}
+.v5-hero #hero-title{margin:39px 0 26px;max-width:none;line-height:1.02;letter-spacing:-3px;font-family:var(--pub-display);font-size:clamp(48px,5.8vw,105px);font-weight:900;white-space:normal}
+.v5-hero #hero-title span{display:block;white-space:nowrap}
+.v5-hero #hero-title span.pub-title-cream{color:var(--v5-cream);-webkit-text-fill-color:var(--v5-cream);-webkit-text-stroke:0;background:none;letter-spacing:-3px;text-shadow:3px 4px 0 #21130ff0,0 8px 20px #000c}
+.v5-hero #hero-title span.pub-title-red{color:var(--v5-red);-webkit-text-fill-color:var(--v5-red);-webkit-text-stroke:0;background:none;letter-spacing:-3px;text-shadow:3px 4px 0 #21130ff0,0 8px 20px #000b}
+.v5-line{display:flex;align-items:center;gap:13px;border-top:1px solid #b58b60;max-width:675px;padding-top:18px;font:900 16px/1.2 var(--display);letter-spacing:3px;color:#f1d7b2;text-shadow:0 2px 6px #000}
+.v5-line b{color:#c92837;font-size:15px}
+.v5-hero-content>p{max-width:525px;font:600 16px/1.9 var(--body);color:#f1e2cf;text-shadow:0 2px 8px #000;margin:20px 0 0}
+.v5-hero .hero-actions{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.v5-hero .button{font:900 15px var(--display);min-height:55px;letter-spacing:1px;white-space:nowrap;padding:0 22px}
+.v5-hero .button span{font-size:21px}
+.v5-hero .button-red{border:1px solid #ec4850;background:#c9182d}
+.v5-hero .pub-outline{background:#100909c4;border:1px solid #e3c7a0;color:#f5e5c5}
+.v5-left-poster{position:absolute;left:8px;bottom:125px;border:3px solid #a66b4880;background:#0b0909b2;padding:13px 11px;transform:rotate(-8deg);box-shadow:0 6px 24px #000c;z-index:0;opacity:.40}
+.v5-left-poster span{font:900 24px/.97 var(--display);color:#e6cb9e;letter-spacing:2px}
+.v5-hero-right{position:absolute;right:2.6%;top:7%;height:85%;width:36%;pointer-events:none}
+.v5-hero-seal{position:absolute;right:34%;top:0;background:#1d1212d9;border:2px solid #e4ba75;outline:4px solid #42251a99;border-radius:50%;width:96px;height:96px;display:grid;place-content:center;text-align:center;color:#f1ce91;font:900 45px/.9 var(--display);transform:rotate(-12deg);opacity:.8}
+.v5-hero-seal small{font:900 9px/1.2 var(--display);letter-spacing:.5px}
+.v5-rock-roundel{position:absolute;left:13%;top:7%;font:900 65px/1 var(--display);color:#d72b3b;opacity:.36}
+.v5-wall-sign{position:absolute;right:0;top:18%;color:#e8d6b7;font:900 20px/1.2 var(--display);letter-spacing:3px;padding:15px 14px;border:2px solid #ebba7980;background:#1b110cb3;box-shadow:0 7px 20px #0009;transform:rotate(2deg);text-shadow:0 2px 5px #000}
+.v5-wall-sign b{color:#e64c4f}
+.v5-bottom-edge{position:absolute;bottom:0;left:0;right:0;padding:12px 8%;font:900 11px var(--display);letter-spacing:3px;background:linear-gradient(90deg,#39140cf0,#170d0dd9);border-top:1px solid #ca8c4c66;color:#dfbc8c}
+/* Editorial photo-panels echoing the reference image. */
+.v5-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;background:#0a0707;min-height:325px;border-top:6px solid #2d100b;border-bottom:6px solid #2d100b}
+.v5-features .pub-feature{min-height:323px;max-height:370px;padding:27px 6.5% 20px;justify-content:flex-end;background-size:cover}
+.v5-features .pub-feature-food{background-image:url(assets/burger-fries.webp);background-position:62% 55%}
+.v5-features .pub-feature-beer{background-image:url(assets/shops-pair.webp);background-position:54% 42%}
+.v5-features .pub-feature-drinks{background-image:url(assets/cocktails.webp);background-position:47% 45%}
+.v5-features .pub-feature:before{background:linear-gradient(0deg,#100708f8 0%,#120807ad 53%,#0c07073f 100%)}
+.v5-features .pub-feature:after{opacity:.13}
+.v5-features .pub-feature-caption{position:absolute;top:20px;left:6.5%;font:900 11px var(--display);color:#f5dcaf;letter-spacing:2.5px;margin:0}
+.v5-features .pub-feature h2{font:900 clamp(36px,4vw,63px)/.92 var(--pub-display);letter-spacing:-2px;margin:0 0 6px;color:#f1e0c0;text-shadow:3px 3px 0 #14080beb}
+.v5-features .pub-feature h2 span{color:#e32941}
+.v5-features .pub-feature p{font:700 12px/1.5 var(--body);color:#f2e1cd;max-width:330px;text-shadow:0 2px 8px #000;margin:3px 0 18px}
+.v5-features .pub-feature-link{position:absolute;right:23px;bottom:23px;width:42px;height:42px;border:1px solid #f2debf;border-radius:50%;display:grid;place-content:center;font:900 26px var(--display);margin:0;color:#fff}
+.v5-features .pub-feature:hover .pub-feature-link{background:#be2131;transform:translateY(-3px)}
+/* Modular three-column band visible directly under the hero; no buried promos */
+.v5-quick-links{display:grid;grid-template-columns:1.35fr .83fr .83fr;gap:4px;background:#100a09;padding:4px}
+.v5-quick{min-height:348px;position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:27px;color:#f3e0c1;border:1px solid #4c2922;background:#180e0b}
+.v5-quick:before{content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;background:linear-gradient(0deg,#0d0706ee 0%,#1a0a0a88 62%,transparent 100%)}
+.v5-mini{color:#ddb37b;font:900 10px var(--display);letter-spacing:3px;margin-bottom:auto}
+.v5-quick h2{font:900 clamp(42px,4vw,74px)/.93 var(--pub-display);letter-spacing:-2px;margin:8px 0 8px;color:#f2deb9;text-shadow:2px 3px 0 #000a}
+.v5-quick h2 em{color:#ed3344;font-style:normal}
+.v5-quick p{font:600 12px/1.6 var(--body);max-width:280px;margin:0 0 15px}
+.v5-quick strong{font:900 15px var(--display);letter-spacing:1.1px;text-decoration:underline;text-underline-offset:5px;color:#ebbd81}
+.v5-quick:hover strong{color:#fff}
+.v5-happy{background:linear-gradient(90deg,#230c0dfb,#2b0f10a0 55%,transparent),url(assets/british-wall.webp) center/cover;justify-content:center}
+.v5-happy:before{background:linear-gradient(90deg,#170c0cf2 0%,#1e100ec7 43%,#0000 73%)}
+.v5-happy>div{position:relative;z-index:2;max-width:66%}
+.v5-happy .v5-mini{display:block;margin-bottom:16px}
+.v5-happy h2{font-size:clamp(56px,4.8vw,83px);line-height:.95}
+.v5-happy img{position:absolute;right:0;bottom:-2%;height:105%;width:48%;object-fit:cover;object-position:52% 53%;filter:contrast(1.15) saturate(1.08);z-index:0;mask-image:linear-gradient(90deg,transparent 0%,#000 26%)}
+.v5-happy strong,.v5-happy p{position:relative;z-index:2}
+.v5-quick-menu{background:linear-gradient(0deg,#180a06e3,transparent),url(assets/pizza.webp) center 48%/cover}
+.v5-quick-gallery{background:linear-gradient(0deg,#160909e6,transparent),url(assets/bar-interior.webp) center/cover}
+.v5-quick-menu:before,.v5-quick-gallery:before{background:linear-gradient(0deg,#0a0707e8,transparent 90%)}
+.v5-quick-menu h2,.v5-quick-gallery h2{font-size:clamp(45px,4vw,73px)}
+.anchor-sentinel{display:block;position:relative;top:-80px;visibility:hidden}
+.v5-agenda{display:grid;grid-template-columns:1fr .7fr;gap:9%;padding:85px 8%;align-items:end;position:relative;background:linear-gradient(90deg,#130b0bbd,#1b0b0d9c),url(assets/british-wall.webp) center 34%/cover;color:#f0ddbb;border-top:4px solid #854221}
+.v5-agenda:before{content:'';position:absolute;inset:0;background:url(assets/grain.webp) repeat;opacity:.22;pointer-events:none}
+.v5-agenda-heading,.v5-agenda>div:last-child{position:relative}
+.v5-agenda-heading span{font:900 13px var(--display);letter-spacing:3px;color:#eab87b}
+.v5-agenda h2{font:900 clamp(53px,6.8vw,110px)/.92 var(--pub-display);letter-spacing:-3px;margin:25px 0 0}
+.v5-agenda h2 em{color:#ed3047;font-style:normal}
+.v5-agenda p{font:600 15px/1.85 var(--body);max-width:450px}
+.v5-agenda .button{font:900 15px var(--display)}
+/* Bar-first menu utility */
+.menu-section{scroll-margin-top:30px}
+.item-title h3{max-width:78%}
+.menu-item .item-label{letter-spacing:1.1px;color:#e5b77c}
+.menu-section .price-note{padding:12px 0;border-top:1px solid #79503e}
+/* Pure CSS mobile controls, no dead or decorative links */
+@media(max-width:1200px){
+ .site-header .navigation{gap:12px}
+ .site-header .navigation a{font-size:12px}
+ .site-header .brand{min-width:158px}
+ .v5-hero-content{width:70%}
+ .v5-hero #hero-title{font-size:clamp(47px,5.65vw,80px)}
+ .v5-wall-sign{display:none}
+ .v5-quick h2{font-size:clamp(37px,4.25vw,62px)}
+}
+@media(max-width:920px){
+ .site-header .navigation,.site-header .header-action{display:none}
+ .site-header .menu-toggle{display:flex;margin-left:auto}
+ .v5-hero{min-height:650px;background-position:58% 50%}
+ .v5-hero-content{width:78%;padding:83px 4.8% 82px}
+ .v5-hero #hero-title{font-size:clamp(52px,7.0vw,74px)}
+ .v5-hero #hero-title span{white-space:normal}
+ .v5-line{font-size:14px;letter-spacing:1.8px;gap:8px}
+ .v5-hero-content>p{max-width:510px;font-size:14px}
+ .v5-hero-seal,.v5-rock-roundel{display:none}
+ .v5-features .pub-feature h2{font-size:clamp(30px,3.9vw,42px)}
+ .v5-quick-links{grid-template-columns:1fr 1fr}
+ .v5-happy{grid-column:span 2;min-height:330px}
+ .v5-happy h2{font-size:76px}
+ .v5-quick{min-height:310px}
+ .v5-agenda{grid-template-columns:1fr;gap:20px}
+}
+@media(max-width:600px){
+ .site-header{height:75px}
+ .v5-hero{min-height:750px;background-position:69% 50%}
+ .v5-hero:before{background:linear-gradient(90deg,#10090bda 0%,#140a0ab2 58%,#170b0a66 100%)}
+ .v5-hero:after{background:linear-gradient(0deg,#0c0707dd,transparent 34%,#0905067b)}
+ .v5-hero-content{width:100%;padding:77px 5.5% 70px}
+ .v5-eyebrow{font-size:11px;letter-spacing:1.4px}
+ .v5-hero #hero-title{font-size:clamp(46px,11.5vw,68px);line-height:1.10;letter-spacing:-2px;margin:28px 0 20px}
+ .v5-hero #hero-title span{white-space:normal!important}
+ .v5-hero #hero-title span.pub-title-cream,.v5-hero #hero-title span.pub-title-red{letter-spacing:-2px}
+ .v5-line{font-size:12px;flex-wrap:wrap;letter-spacing:1px;padding-top:14px;gap:7px}
+ .v5-hero-content>p{font-size:13px;line-height:1.75;max-width:340px}
+ .v5-hero .hero-actions{display:grid;gap:11px;width:min(330px,100%)}
+ .v5-hero .button{width:100%;min-height:51px;font-size:13px}
+ .v5-bottom-edge{font-size:8px;letter-spacing:1px;padding:12px 5%}
+ .v5-left-poster{display:none}
+ .v5-features{grid-template-columns:1fr;gap:4px}
+ .v5-features .pub-feature{min-height:220px;max-height:none;padding:22px 7%}
+ .v5-features .pub-feature h2{font-size:39px}
+ .v5-features .pub-feature p{max-width:270px}
+ .v5-quick-links{grid-template-columns:1fr}
+ .v5-happy{grid-column:span 1;min-height:330px}
+ .v5-happy>div{max-width:66%}
+ .v5-happy h2{font-size:clamp(47px,11vw,70px)}
+ .v5-happy img{width:53%;height:100%;object-position:47%}
+ .v5-quick{min-height:245px}
+ .v5-quick-menu,.v5-quick-gallery{min-height:240px}
+ .v5-quick h2{font-size:clamp(39px,10.6vw,57px)}
+ .v5-agenda{padding:65px 6%}
+ .v5-agenda h2{font-size:clamp(46px,10vw,75px)}
+}
+@media(prefers-reduced-motion:reduce){.pub-feature,.v5-quick{transition:none}}

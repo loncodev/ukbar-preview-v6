@@ -1,0 +1,254 @@
+/* UK BAR V4 / THE ROCK PUB ISSUE
+   Dark British vintage posters, warm pub photography, real branded UK bar glasses.
+   Progressive enhancement over the functional V3: styles.css stays intact.
+*/
+:root{
+  --pub-ink:#0b0909;--pub-dark:#130e0c;--pub-wood:#211713;
+  --pub-red:#c9182d;--pub-redhot:#f02e40;--pub-paper:#f4e5c7;
+  --pub-aged:#ccb990;--pub-gold:#dca958;--pub-navy:#07172d;
+  --pub-display:'Roboto Slab',Georgia,serif;
+}
+body{background:var(--pub-ink);color:var(--pub-paper)}
+.proposal-banner{background:#ede5d5;color:#2c1d14;border-bottom:1px solid #8b6f45;font-family:var(--body)}
+.brand-stripe{height:5px;grid-template-columns:43% 14% 43%}
+.brand-stripe span:nth-child(1){background:#bb1128}.brand-stripe span:nth-child(2){background:#e8d4b4}.brand-stripe span:nth-child(3){background:#082448}
+.site-header{height:90px;background:linear-gradient(135deg,#100e0ddf,#0b0909fb),url(assets/grain.webp);border-bottom:1px solid #be854943;padding:0 5%;box-shadow:0 2px 19px #0008}
+.brand img{border:1px solid #e4d3ae60;box-shadow:0 1px 13px #0009}
+.brand-wordmark{font-family:var(--pub-display);font-weight:900;font-size:26px;letter-spacing:-2px;color:var(--pub-paper)}
+.brand-wordmark em{color:var(--pub-redhot)}
+.brand-wordmark small{font-family:var(--body);font-size:8px;letter-spacing:2.2px;color:var(--pub-gold);margin-top:6px}
+.navigation a{font:900 12px/1 var(--display);letter-spacing:1.7px;color:var(--pub-paper)}
+.navigation a:hover{color:var(--pub-gold)}
+.button,.button-red,.button-blue{border-radius:2px}
+.button-red{background:var(--pub-red);color:#fff;border:1px solid #d13c40;box-shadow:0 3px 0 #590c12,0 12px 20px #0004}
+.button-red:hover{background:#ee263b}
+.button-blue{background:#16100d;color:var(--pub-paper);border:1px solid var(--pub-gold)}
+.button-outline{border-color:#aa865d;color:var(--pub-paper)}
+.button-outline:hover{background:var(--pub-paper);color:#17100d}
+.button-small{min-height:42px;font-family:var(--display);font-size:13px}
+.navigation,.header-action{flex-shrink:0}
+
+/* The cinematic collage hero */
+.pub-hero{min-height:760px;display:block;overflow:hidden;position:relative;isolation:isolate;background:#110d0c url(assets/pub-collage.webp) center 42%/cover no-repeat}
+.pub-hero:before{content:none}
+.pub-hero:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,#0707085e,#0000 25%,#0804063b 72%,#0705059b),radial-gradient(circle at 70% 50%,transparent 7%,#00000052 99%);z-index:-1}
+.pub-hero-wall{position:absolute;inset:0;pointer-events:none;opacity:.28;mix-blend-mode:screen;background:url(assets/grain.webp) repeat;z-index:-1}
+.pub-jack-left{position:absolute;width:520px;height:520px;right:1%;top:0;transform:rotate(-13deg);pointer-events:none;z-index:-1;opacity:.16;background:
+linear-gradient(90deg,transparent 43%,#e9e0d1 43% 57%,transparent 57%),
+linear-gradient(0deg,transparent 43%,#e9e0d1 43% 57%,transparent 57%),
+linear-gradient(90deg,transparent 47%,#b61228 47% 53%,transparent 53%),
+linear-gradient(0deg,transparent 47%,#b61228 47% 53%,transparent 53%),
+linear-gradient(35deg,transparent 46%,#e9e0d1 47% 51%,transparent 52%),
+linear-gradient(-35deg,transparent 46%,#e9e0d1 47% 51%,transparent 52%),#082149}
+.pub-hero-content{position:relative;z-index:2;padding:85px 0 77px 6.8%;max-width:min(860px,67vw)}
+.pub-hero-tag{display:flex;align-items:center;gap:12px;color:#f7deb2;font:900 11px var(--display);letter-spacing:3px;text-shadow:0 2px 5px #000}
+.pub-crown{font-size:29px;line-height:1;color:var(--pub-gold)}
+.pub-cross{color:var(--pub-redhot);font-size:24px}
+.pub-hero h1{font-family:var(--pub-display);font-weight:900;font-size:clamp(61px,7.35vw,118px);line-height:.99;letter-spacing:-5px;margin:42px 0 23px;text-shadow:0 4px 7px #0009,1px 1px 0 #0009;white-space:normal;max-width:840px}
+.pub-hero h1 span{display:block}
+.pub-title-cream{color:#f0dfbf;background-image:repeating-linear-gradient(168deg,#e9d2b2 0 2px,#faebca 3px 5px,#cab28b 6px 7px,#f5e3c5 8px 13px);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(2px 4px 1px #0006)}
+.pub-title-red{color:#da233a;background-image:repeating-linear-gradient(159deg,#f02e43 0 3px,#ba182b 4px 6px,#ec263c 7px 12px);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(2px 4px 1px #0008)}
+.pub-hero-subline{font:800 16px var(--display);letter-spacing:4px;color:#f0dbc4;text-shadow:0 2px 5px #000;margin:0 0 19px}
+.pub-hero-subline span{color:var(--pub-gold);padding:0 6px}
+.pub-hero-description{max-width:510px;color:#f9ecdb;line-height:1.75;font-size:15px;font-weight:500;text-shadow:0 2px 6px #000;letter-spacing:.1px}
+.pub-hero .hero-actions{margin-top:24px;gap:15px}
+.pub-hero .button{font:900 15px var(--display);letter-spacing:1px;padding:0 21px;min-height:55px}
+.pub-outline{border:1px solid #ebd5b4;color:#f4e9d7;background:#0c0a088c}
+.pub-outline:hover{background:#f8e9cd;color:#16110c}
+.pub-hero-side{position:absolute;right:2.5%;top:23%;bottom:0;width:32%;pointer-events:none}
+.pub-photo-stamp{position:absolute;right:8%;top:0;display:grid;place-content:center;transform:rotate(11deg);width:150px;height:150px;border-radius:50%;border:3px solid #f2d5a4;background:#2c130fd6;color:#eedbb9;font:900 22px/.95 var(--display);text-align:center;letter-spacing:1px;box-shadow:0 0 0 6px #2c130f75,0 8px 20px #0009}
+.pub-photo-stamp span{color:#e33744;font-size:29px;margin-top:7px}
+.pub-side-caption{position:absolute;bottom:30px;right:5%;background:#130d0ab0;padding:7px 11px;color:#e8c18d;font:900 11px var(--display);letter-spacing:2px}
+.pub-london-mark{position:absolute;bottom:32px;left:6.8%;font:900 12px/1.2 var(--display);letter-spacing:1.9px;color:#efdbc0;opacity:.85;padding-left:10px;border-left:3px solid #e02638;display:none}
+/* Interactive feature triptych, full photographic backgrounds */
+.pub-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));min-height:365px;border-top:5px solid #aa6e38;border-bottom:5px solid #21110e}
+.pub-feature{min-height:365px;display:flex;flex-direction:column;justify-content:flex-start;padding:30px 7% 26px;position:relative;isolation:isolate;overflow:hidden;border-right:3px solid #180c0b;background-size:cover;background-position:center;color:#f3e4c8}
+.pub-feature:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0b0808e8 0%,#0c0708a0 45%,#1e0c0b26 95%),linear-gradient(0deg,#000b,transparent 70%)}
+.pub-feature:after{content:'';position:absolute;inset:0;z-index:-1;opacity:.34;background:url(assets/grain.webp) center/cover;mix-blend-mode:screen;transition:opacity .25s}
+.pub-feature:hover:after{opacity:.14}.pub-feature:hover .pub-feature-link{color:#fff;transform:translateX(5px)}
+.pub-feature-food{background-image:url(assets/burger-fries.webp);background-position:70% 57%}
+.pub-feature-beer{background-image:url(assets/shops-pair.webp);background-position:65% 34%}
+.pub-feature-drinks{background-image:url(assets/drinks-colour.webp);background-position:65% 50%}
+.pub-feature-caption{font:900 10px var(--body);letter-spacing:2px;color:#e8c490;margin:0 0 42px}
+.pub-feature h2{font:900 clamp(38px,3.8vw,65px)/.98 var(--pub-display);letter-spacing:-2px;text-shadow:0 3px 10px #000;margin:0 0 16px}
+.pub-feature h2 em{font-style:normal;color:#e72b3b}
+.pub-feature-beer h2 em{color:#e5aa57}
+.pub-feature p{font-size:13px;font-weight:700;max-width:240px;line-height:1.5;text-shadow:0 2px 6px #000;letter-spacing:.2px}
+.pub-feature-link{font:900 13px var(--display);letter-spacing:1.8px;text-decoration:underline;text-underline-offset:7px;color:var(--pub-gold);transition:transform .2s,color .2s;margin-top:auto}
+/* Existing ticker */
+.marquee{background:#100c0b;border-top:1px solid #6a372b;border-bottom:1px solid #ae6b32;height:68px}
+.marquee-track{color:#d9b480;font-family:var(--display);letter-spacing:3px;font-size:30px}
+.marquee-track b{color:var(--pub-redhot)}
+
+/* Venue story changes to pub mood */
+.about{background:radial-gradient(circle at 90% 25%,#44291c,#1b1311 55%,#100b0b);color:var(--pub-paper)}
+.about:before{height:5px;background:linear-gradient(90deg,#9b1624,#cba873,#0b213d)}
+.about .section-index,.gallery .section-index,.menu-section .section-index,.visit .section-index{border-color:#a47749a6;color:var(--pub-aged)}
+.section-index{font-size:10px}
+.navy-eyebrow{color:#d5a669}
+.eyebrow-line{background:var(--pub-redhot)}
+.about h2{font-family:var(--display);font-weight:900;color:#f4e3cb;text-shadow:1px 2px #0009}
+.about h2 span{-webkit-text-stroke:1.5px #f4e3cb}
+.about-lead{color:#f2dbc0;font-family:var(--pub-display);font-size:26px}
+.about-copy>p:not(.about-lead){color:#d3bda5}
+.about .text-link{color:#e0af66}
+.about-image{box-shadow:16px 16px 0 #451c16;filter:sepia(.10) contrast(1.06)}
+.about-image:before{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#290b0950,transparent);z-index:1;pointer-events:none}
+.photo-index{z-index:2;background:linear-gradient(transparent,#120809ba);color:#f8deb7}
+.pub-promo{min-height:480px;display:grid;grid-template-columns:54% 46%;position:relative;isolation:isolate;overflow:hidden;border-top:7px solid #43201a;border-bottom:7px solid #372015;background:linear-gradient(130deg,#150d0b,#30110b 67%,#100908)}
+.pub-promo:before{content:'';position:absolute;inset:0;pointer-events:none;background:url(assets/grain.webp) repeat;opacity:.18;mix-blend-mode:screen;z-index:-1}
+.pub-promo-copy{position:relative;z-index:2;padding:65px 6% 52px 13%;background:linear-gradient(95deg,#110a0ce8,#210d10a8 90%,transparent)}
+.promo-intro{font:900 11px var(--body);letter-spacing:2px;color:#e0b57a}
+.bolt{color:#ed3045;font:bold 32px var(--display);vertical-align:middle;padding:0 4px}
+.pub-promo h2{font:900 clamp(69px,8vw,130px)/.92 var(--pub-display);letter-spacing:-5px;color:#f5ddb5;text-shadow:1px 4px 5px #0008;margin:22px 0 14px}
+.pub-promo h2 span{color:#e42b3e}
+.promo-time{font:900 clamp(18px,2.2vw,30px)/1.1 var(--display);letter-spacing:1.6px;color:var(--pub-gold);margin:20px 0}
+.promo-time span{color:#ed3045;padding:0 10px}
+.pub-promo p{font-size:15px;color:#f9ead5;max-width:380px;line-height:1.65}
+.pub-promo .button{font-size:12px;font-family:var(--display);margin:7px 0 12px}
+.pub-promo small{display:block;max-width:450px;color:#bea58f;font-size:10px}
+.pub-promo-photo{position:relative;min-height:480px;background:#1b0e0a}
+.pub-promo-photo img{height:100%;width:100%;object-fit:cover;object-position:50% 45%;position:absolute;inset:0;filter:contrast(1.09) saturate(1.1)}
+.pub-promo-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#24100d7a,transparent 35%),linear-gradient(0deg,#17090840,transparent 70%)}
+.promo-photo-mark{position:absolute;bottom:16px;right:15px;z-index:1;border:2px solid #e5be85;background:#220d0dc7;padding:15px 18px;transform:rotate(-7deg);color:#f4e0bf;text-align:center;font:900 23px/.94 var(--display);letter-spacing:2px}
+
+/* Menu keeps real verified product categories and navigable tabs */
+.menu-section{background:radial-gradient(circle at 15% 20%,#342016,#130d0e 52%,#080707 100%);color:#f4e3c9}
+.menu-intro h2{font-family:var(--display);letter-spacing:-1px;line-height:.88;color:#f6e4c5;text-shadow:3px 3px 0 #0006}
+.menu-intro h2 em{color:#df2e3b}
+.menu-intro h2>span{color:#e03540}
+.menu-intro>p{color:#d5bca1}
+.menu-toolbar{border-color:#9d6c48}
+.category-tab{font:900 13px var(--display);color:#dfc6a8;letter-spacing:1.6px}
+.category-tab.is-active{border-color:#d52c3a;color:#fff4e3}
+.category-tab:hover{color:#fff}
+.menu-label{color:#ccaa83}
+.menu-item{border-bottom:1px dashed #8b624c}
+.item-label{color:#c89e6c}
+.item-title h3{font-family:var(--display);font-size:clamp(31px,3.2vw,50px);font-weight:900;letter-spacing:.4px}
+.item-title strong{color:#e7b66a;font-size:27px}
+.menu-item p{color:#e0ccb7}
+.menu-visuals{gap:8px}
+.visual-card{border:3px solid #47251d;filter:contrast(1.02)}
+.menu-links{border-color:#967154}.menu-links small,.price-note{color:#bea58e}
+.menu-links .button{font-family:var(--display);font-size:12px;letter-spacing:1px}
+/* The mood statement should resemble a distressed club poster */
+.statement{background:#100908;border-top:5px solid #422018;border-bottom:5px solid #422018}
+.statement-rules{background:linear-gradient(100deg,#170a09c9,#130b0bc9),url(assets/british-wall.webp) center/cover}
+.statement-rules:before{background:repeating-linear-gradient(32deg,transparent,transparent 22px,#c59a6b09 23px,#0000 24px)}
+.statement-content>span,.statement-content p{color:#d9b783}
+.statement h2{font-family:var(--display);font-weight:900;letter-spacing:0;line-height:.84;color:#f7e1bc;text-shadow:3px 4px #000b}
+.statement h2 em{-webkit-text-stroke:2px #f8daba}
+.statement h2 i{color:#ed2f3d}
+.gallery{background:linear-gradient(165deg,#170f0c,#251912 65%,#110b0b);color:var(--pub-paper)}
+.gallery h2{font-family:var(--display);font-weight:900;font-size:clamp(63px,7.2vw,122px);line-height:.88;text-shadow:2px 2px 0 #0008}
+.gallery h2 span{color:#dc3240}
+.gallery-heading p{color:#d9c0a2}
+.gallery-card{border:3px solid #3e231b}
+.gallery-card figcaption{color:#f4e4c8;text-shadow:0 2px 6px #000}
+.visit{background:radial-gradient(circle at 15% 20%,#312119,#140e0d 70%);color:#f1ddc0}
+.visit:before{background:linear-gradient(90deg,#a21328 0 40%,#e6d8bb 40% 55%,#06254b 55%)}
+.visit h2{font-family:var(--display);font-size:clamp(78px,9vw,130px);line-height:.92;color:#f1ddc0;text-shadow:3px 3px #000}
+.visit h2 em{color:#de2c3d}
+.visit-left>p{color:#dac2a5}
+.detail{border-color:#936c47}
+.detail span{color:#cba879}
+.detail strong{font-family:var(--display);letter-spacing:0;font-size:clamp(26px,3.2vw,40px)}
+.detail a{color:#e4b46e}
+.booking-link{background:#ba1830;font-family:var(--display);border:1px solid #e25757}
+.footer{background:linear-gradient(130deg,#090707,#1b1010);border-top:5px solid #a41a28}
+.footer-top strong{font-family:var(--pub-display);font-size:clamp(73px,8vw,145px);letter-spacing:-3px;color:#f5dfbb}
+.footer-top strong span{color:#eb3545}
+.footer-top p,.footer-bottom{color:#bd9f7b}
+.footer-top nav a:hover{color:#e6ad59}
+.footer-bottom{border-color:#a07350}
+
+/* Depth and accessibility on tablets and phones */
+@media(max-width:1150px){
+ .pub-hero-content{max-width:74vw}
+ .pub-hero h1{font-size:clamp(64px,7.5vw,94px)}
+ .pub-feature h2{font-size:clamp(30px,3.6vw,48px)}
+ .pub-promo-copy{padding-left:8%}
+}
+@media(max-width:850px){
+ .site-header{height:76px;background:#110c0c}
+ .mobile-menu{top:112px;background:#140e0ef7;border-bottom:2px solid #ab6a43}
+ .mobile-menu a{font-family:var(--display);color:var(--pub-paper)}
+ .mobile-menu a:last-child{color:#ef4556}
+ .pub-hero{min-height:760px;background-position:59% 50%;display:block}
+ .pub-hero:after{background:linear-gradient(90deg,#0a0708d4,#1209099e 85%),linear-gradient(0deg,#0b0608a9,transparent 60%)}
+ .pub-hero-content{max-width:88vw;padding:100px 6% 68px}
+ .pub-hero h1{font-size:clamp(61px,10vw,93px);letter-spacing:-3px}
+ .pub-photo-stamp{width:112px;height:112px;font-size:18px;opacity:.7}
+ .pub-features{grid-template-columns:repeat(3,minmax(0,1fr));min-height:295px}
+ .pub-feature{min-height:295px;padding:22px 6%}
+ .pub-feature-caption{margin-bottom:26px}
+ .pub-feature h2{font-size:32px;letter-spacing:-1px}
+ .pub-feature p{font-size:11px}
+ .pub-feature-link{font-size:12px}
+ .pub-promo h2{font-size:clamp(58px,8vw,90px);letter-spacing:-3px}
+ .pub-promo-copy{padding:55px 5% 40px 7%}
+ .pub-promo-photo{min-height:430px}
+}
+@media(max-width:600px){
+ .brand-wordmark{font-size:24px}
+ .pub-hero{min-height:655px;background-position:62% 50%}
+ .pub-hero-content{padding:65px 5.5% 48px;max-width:100%}
+ .pub-hero-tag{font-size:9px;letter-spacing:1.4px}
+ .pub-crown{font-size:21px}
+ .pub-hero h1{font-size:clamp(47px,11.1vw,67px);line-height:1.01;letter-spacing:-2.5px;margin:35px 0 24px}
+ .pub-hero-subline{font-size:12px;letter-spacing:1.6px}
+ .pub-hero-subline span{padding:0 2px}
+ .pub-hero-description{font-size:14px;max-width:350px}
+ .pub-hero .hero-actions{display:flex;flex-direction:column;width:min(330px,100%)}
+ .pub-hero .button{font-size:13px;min-height:52px}
+ .pub-photo-stamp{display:none}
+ .pub-side-caption{display:none}
+ .pub-features{grid-template-columns:1fr;min-height:0}
+ .pub-feature{min-height:250px;padding:23px 7%;border-right:0;border-bottom:3px solid #130b0a;background-position:70% 35%}
+ .pub-feature:before{background:linear-gradient(90deg,#0b0808e8,#0a0809a1 63%,transparent)}
+ .pub-feature-caption{margin-bottom:16px;font-size:9px}
+ .pub-feature h2{font-size:41px;margin-bottom:10px}
+ .pub-feature p{font-size:13px;max-width:230px}
+ .pub-feature-link{font-size:12px}
+ .pub-promo{display:flex;flex-direction:column}
+ .pub-promo-copy{padding:48px 6% 34px}
+ .pub-promo h2{font-size:clamp(61px,14vw,92px)}
+ .pub-promo-photo{height:350px;min-height:350px}
+ .pub-promo-photo img{object-position:50% 48%}
+ .pub-promo .button{width:100%}
+ .about h2{font-size:clamp(64px,13vw,95px)}
+ .menu-intro h2{font-size:clamp(65px,12.5vw,90px)}
+ .category-tab{font-size:12px;letter-spacing:.2px}
+ .gallery h2{font-size:clamp(51px,10.5vw,75px)}
+ .visit h2{font-size:clamp(73px,13vw,99px)}
+ .detail strong{font-size:clamp(25px,8vw,34px)}
+ .footer-top strong{font-size:clamp(68px,15vw,90px)}
+}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* V4 typography calibration — proper solid vintage letterpress, not outline text */
+.pub-mobile-break{display:none}
+.pub-hero-content{max-width:min(1050px,77vw)}
+.pub-hero h1{font-size:clamp(58px,5.6vw,96px);letter-spacing:-3px;line-height:1.04}
+.hero.pub-hero h1 span.pub-title-cream{
+  display:block;color:#f3e1bf;-webkit-text-fill-color:#f3e1bf;
+  -webkit-text-stroke:0 transparent;background:none;
+  text-shadow:3px 3px 0 #2a1b16,0 7px 16px #080404ed;
+  filter:none
+}
+.hero.pub-hero h1 span.pub-title-red{
+  display:block;color:#e32940;-webkit-text-fill-color:#e32940;
+  -webkit-text-stroke:0 transparent;background:none;
+  text-shadow:3px 3px 0 #290b0d,0 7px 16px #080404ed;
+  filter:none
+}
+.pub-hero .pub-hero-subline{margin-top:25px}
+@media(max-width:850px){
+  .pub-mobile-break{display:block}
+  .pub-hero-content{max-width:96vw}
+  .pub-hero h1{font-size:clamp(56px,8.4vw,90px);letter-spacing:-2px}
+}
+@media(max-width:600px){
+  .pub-hero h1{font-size:clamp(44px,10.7vw,67px);letter-spacing:-1px}
+}
