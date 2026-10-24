@@ -1,0 +1,39 @@
+/* Conversion flow / UK Bar V6. Preserves approved posters, branding and photography. */
+.uk-visit-steps{position:relative;background:linear-gradient(115deg,#230e0d,#10080a 55%,#291311);padding:27px 5% 30px;border-top:4px solid #a62336;border-bottom:4px solid #73513b;color:#f1ddbd}
+.uk-visit-steps-head{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);column-gap:28px;align-items:end;max-width:1460px;margin:0 auto 21px}
+.uk-visit-steps-eyebrow{grid-column:1/-1;font:900 12px/1.4 var(--display);color:#e9af7e;letter-spacing:2px}
+.uk-visit-steps-head h2{margin:12px 0 0;color:#f4dfc3;font:900 clamp(27px,3.3vw,48px)/1.08 var(--pub-display);letter-spacing:-1.1px}
+.uk-visit-steps-head h2 em{font-style:normal;color:#f32b49}
+.uk-visit-steps-head p{max-width:490px;color:#d8bea2;font:600 14px/1.65 var(--body);margin:0}
+.uk-visit-step-grid{max-width:1460px;margin:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.uk-visit-step{display:flex;align-items:center;gap:14px;min-width:0;text-decoration:none;color:#f5e1c2;background:linear-gradient(140deg,#3b2219,#1b100f);border:1px solid #886048;min-height:110px;padding:17px 16px;transition:background .2s,border-color .2s}
+.uk-visit-step:hover{background:linear-gradient(125deg,#702832,#301916);border-color:#e0aa79}
+.uk-visit-step:focus-visible{outline:3px solid #ffe09d;outline-offset:3px}
+.uk-visit-step-no{flex:0 0 auto;color:#e63850;font:900 clamp(31px,3.4vw,47px)/1 var(--pub-display)}
+.uk-visit-step-copy{display:flex;min-width:0;flex:1;flex-direction:column;gap:6px}
+.uk-visit-step-copy strong{font:900 18px/1.1 var(--display);color:#ffebd0;letter-spacing:.2px}
+.uk-visit-step-copy small{color:#d5b99b;font:500 12px/1.5 var(--body)}
+.uk-visit-step-arrow{flex:0 0 auto;color:#f5d5a7;font:900 22px var(--display);align-self:flex-start}
+.uk-visit-step-note{max-width:1460px;margin:14px auto 0;font:500 11px/1.5 var(--body);color:#cfae8f}
+@media(max-width:930px){
+ .uk-visit-steps-head{display:block}
+ .uk-visit-steps-head p{margin:9px 0 0}
+ .uk-visit-step{padding:13px 11px;min-height:115px;gap:9px}
+ .uk-visit-step-no{font-size:31px}
+ .uk-visit-step-copy strong{font-size:16px}
+ .uk-visit-step-copy small{font-size:11px}
+}
+@media(max-width:680px){
+ .uk-visit-steps{padding:25px 5% 27px}
+ .uk-visit-steps-head{margin-bottom:15px}
+ .uk-visit-steps-head h2{font-size:clamp(29px,8vw,40px)}
+ .uk-visit-steps-head p{font-size:13px}
+ .uk-visit-step-grid{grid-template-columns:1fr;gap:8px}
+ .uk-visit-step{min-height:70px;padding:12px 13px}
+ .uk-visit-step-no{font-size:30px;flex-basis:38px}
+ .uk-visit-step-copy strong{font-size:17px}
+ .uk-visit-step-copy small{font-size:11px}
+ .uk-visit-step-arrow{align-self:center}
+ .uk-visit-step-note{margin-top:13px;font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.uk-visit-step{transition:none}}

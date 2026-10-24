@@ -108,3 +108,24 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ffdf
 }
 @media(max-width:360px){.full-menu-brand small{display:none}.full-menu-brand>span{font-size:19px}.full-menu-header nav a{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Visitor journey within 106-item menu: immediate next step, no fake booking. */
+.full-menu-conversion{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:22px 0 8px}
+.full-menu-conversion a{display:flex;gap:12px;align-items:center;padding:13px 14px;min-height:66px;background:linear-gradient(130deg,#43251c,#1d100f);border:1px solid #986a4c;text-decoration:none;color:#ffedca}
+.full-menu-conversion a:hover{background:#632936;border-color:#f1b886}
+.full-menu-conversion a:focus-visible{outline:3px solid #ffe3ac;outline-offset:3px}
+.full-menu-conversion span{font:900 27px/1 var(--condensed);color:#ee3651}
+.full-menu-conversion strong{font:900 16px/1.15 var(--condensed);letter-spacing:.35px}
+.full-menu-enquiry-note{margin:0 0 12px;color:#e1bb92;font:600 12px/1.6 var(--font)}
+.full-menu-mobile-actions{display:none}
+@media(max-width:680px){
+ .full-menu-conversion{grid-template-columns:1fr;gap:7px;margin:16px 0}
+ .full-menu-conversion a{min-height:46px;padding:9px 13px}
+ .full-menu-conversion span{font-size:23px}
+ .full-menu-mobile-actions{display:grid;grid-template-columns:1fr 1fr 1.25fr;position:fixed;bottom:0;left:0;right:0;z-index:80;height:59px;background:#130a0af4;border-top:1px solid #bd824f;box-shadow:0 -8px 25px #0009}
+ .full-menu-mobile-actions a{display:grid;place-content:center;text-align:center;min-width:0;padding:8px 3px;color:#f4dcba;font:900 13px/1.25 var(--condensed);text-decoration:none;border-right:1px solid #5b3b31;letter-spacing:.5px}
+ .full-menu-mobile-actions a:last-child{background:#bd1730;color:white;border-right:0}
+ .full-menu-mobile-actions a:focus-visible{outline:3px solid #ffe0a0;outline-offset:-4px}
+ .full-menu-footer{padding-bottom:85px}
+}
+@media(max-width:355px){.full-menu-mobile-actions a{font-size:11px}}
