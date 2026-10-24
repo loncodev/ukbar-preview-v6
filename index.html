@@ -9,22 +9,24 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="UK Bar · British Spirit. Valpo Nights.">
   <meta property="og:description" content="Propuesta de nueva experiencia digital para UK Bar, Valparaíso.">
-  <meta property="og:image" content="https://loncodev.github.io/ukbar-preview-v6/assets/og-v5.jpg">
+  <meta property="og:image" content="https://loncodev.github.io/ukbar-preview-v6/assets/og-v6.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <title>UK Bar — V6 · Laboratorio visual</title>
+  <title>UK Bar — British Spirit. Valpo Nights. | V6</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="preload" href="assets/hero-v5.webp" as="image">
+  <link rel="preload" href="assets/hero-v6.webp" as="image">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="v4.css">
   <link rel="stylesheet" href="v5.css">
+  <link rel="stylesheet" href="v6.css">
   <script src="script.js" defer></script>
   <script src="v4.js" defer></script>
   <script src="v5.js" defer></script>
+  <script src="v6.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Saltar al contenido</a>
@@ -39,7 +41,7 @@
       <a href="#inicio">INICIO</a>
       <a href="#elbar">EL BAR</a>
       <a href="#carta">CARTA</a>
-      <a href="#cervezas" data-target-tab="cervezas">CERVEZAS</a>
+      <a href="#tapwall">CERVEZAS</a>
       <a href="#galeria">GALERÍA</a>
       <a href="#agenda">EVENTOS</a>
     </nav>
@@ -47,39 +49,40 @@
     <button class="menu-toggle" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
   </header>
   <nav class="mobile-menu" id="mobile-menu" aria-label="Navegación móvil" hidden>
-    <a href="#inicio">INICIO</a><a href="#elbar">EL BAR</a><a href="#carta">CARTA</a><a href="#cervezas" data-target-tab="cervezas">CERVEZAS</a><a href="#galeria">GALERÍA</a><a href="#agenda">EVENTOS</a><a href="#visitanos">VISÍTANOS</a>
+    <a href="#inicio">INICIO</a><a href="#elbar">EL BAR</a><a href="#carta">CARTA</a><a href="#tapwall">CERVEZAS</a><a href="#galeria">GALERÍA</a><a href="#agenda">EVENTOS</a><a href="#visitanos">VISÍTANOS</a>
     <a href="https://wa.me/56937264991?text=Hola%20UK%20Bar%2C%20quisiera%20consultar%20por%20una%20reserva." target="_blank" rel="noopener noreferrer">CONSULTAR RESERVA ↗</a>
   </nav>
 
   <main id="main">
-    <section class="hero pub-hero v5-hero" id="inicio" aria-labelledby="hero-title">
-      <div class="v5-hero-grain" aria-hidden="true"></div>
-      <div class="v5-left-poster" aria-hidden="true"><span>LIVE<br>BRITISH<br>CRAFT<br>BEER</span></div>
-      <div class="v5-hero-content">
-        <div class="v5-eyebrow">✳ &nbsp; UK BAR · VALPARAÍSO &nbsp; ✳</div>
-        <h1 id="hero-title"><span class="pub-title-cream">BRITISH SPIRIT.</span><span class="pub-title-red">VALPO NIGHTS.</span></h1>
-        <div class="v5-line"><span>CRAFT BEER</span><b>✳</b><span>GOOD FOOD</span><b>✳</b><span>GREAT MUSIC</span></div>
-        <p>Un bar con carácter en el corazón de Valparaíso. Cervezas artesanales, cocina para compartir y una banda sonora que siempre invita a quedarse.</p>
+    <section class="hero pub-hero v5-hero v6-hero" id="inicio" aria-labelledby="hero-title">
+      <div class="v6-halftone" aria-hidden="true"></div>
+      <div class="v6-pub-poster v6-poster-left" aria-hidden="true"><span>LIVE</span><b>BRITISH<br>CRAFT<br>BEER</b><i>GOOD VIBES ONLY</i></div>
+      <div class="v6-hero-content">
+        <div class="v6-crown" aria-hidden="true">♛<span>✦ UK BAR ✦</span></div>
+        <h1 id="hero-title"><span class="v6-cream">BRITISH SPIRIT.</span><span class="v6-red">VALPO NIGHTS.</span></h1>
+        <div class="v6-energy-line"><span aria-hidden="true">ϟ</span><strong>CRAFT BEER</strong><b>✳</b><strong>GOOD FOOD</strong><b>✳</b><strong>GREAT MUSIC</strong><span aria-hidden="true">ϟ</span></div>
+        <p class="v6-intro">Rock británico, cervezas artesanales y cocina para compartir. Una noche diferente en el corazón de Valparaíso.</p>
         <div class="hero-actions">
-          <a class="button button-red" href="#carta">VER NUESTRA CARTA <span aria-hidden="true">↗</span></a>
+          <a class="button button-red" href="#carta"><span aria-hidden="true">✦</span> VER NUESTRA CARTA <span aria-hidden="true">↗</span></a>
           <a class="button pub-outline" href="https://wa.me/56937264991?text=Hola%20UK%20Bar%2C%20quisiera%20consultar%20por%20una%20reserva." target="_blank" rel="noopener noreferrer">CONSULTAR RESERVA <span aria-hidden="true">↗</span></a>
         </div>
+        <div class="v6-hero-location">ALMIRANTE MONTT 129 <span>✳</span> VALPARAÍSO</div>
       </div>
-      <div class="v5-hero-right" aria-hidden="true">
-        <div class="v5-hero-seal">UK<br><small>BAR & RESTAURANT</small></div>
-        <div class="v5-rock-roundel">✳</div>
-        <div class="v5-wall-sign">GOOD<br>PEOPLE<br>GOOD<br>BEER<br><b>GREAT<br>MUSIC</b></div>
+      <div class="v6-hero-art" aria-hidden="true">
+        <div class="v6-art-stamp">GOOD<br>BEER<br><small>GOOD MUSIC</small></div>
+        <div class="v6-roundel">BRITISH<br>BY NATURE</div>
+        <div class="v6-side-sign">GOOD<br>PEOPLE<br>GOOD<br>BEER<br><em>GREAT<br>MUSIC</em></div>
+        <div class="v6-lightning">ϟ</div>
       </div>
-      <div class="v5-bottom-edge" aria-hidden="true">VALPARAÍSO &nbsp; • &nbsp; BRITISH SOUL &nbsp; • &nbsp; CRAFT BEER &nbsp; • &nbsp; THE NIGHT IS OURS</div>
     </section>
     <section class="pub-features v5-features" aria-label="Explora UK Bar">
       <a class="pub-feature pub-feature-food" href="#carta" data-target-tab="comida"><span class="pub-feature-caption">01 / LA COCINA</span><h2>COMIDA<span>.</span></h2><p>Sabores con actitud. Pizzas, hamburguesas y platos para compartir.</p><span class="pub-feature-link" aria-hidden="true">↗</span></a>
-      <a class="pub-feature pub-feature-beer" href="#cervezas" data-target-tab="cervezas"><span class="pub-feature-caption">02 / DE BARRIL</span><h2>CERVEZAS<span>.</span></h2><p>Del primer schop al último brindis. Explora nuestros estilos.</p><span class="pub-feature-link" aria-hidden="true">↗</span></a>
+      <a class="pub-feature pub-feature-beer" href="#tapwall"><span class="pub-feature-caption">02 / DE BARRIL</span><h2>CERVEZAS<span>.</span></h2><p>Del primer schop al último brindis. Estilos, origen, intensidad y precios de la carta.</p><span class="pub-feature-link" aria-hidden="true">↗</span></a>
       <a class="pub-feature pub-feature-drinks" href="#carta" data-target-tab="cocteles"><span class="pub-feature-caption">03 / EN LA BARRA</span><h2>COCTELERÍA<span>.</span></h2><p>Clásicos y creaciones de autor para grandes noches.</p><span class="pub-feature-link" aria-hidden="true">↗</span></a>
     </section>
     <section class="v5-quick-links" aria-label="Novedades y enlaces principales">
-      <a class="v5-quick v5-happy" href="#carta" data-target-tab="cervezas">
-        <div><span class="v5-mini">THE PUB SPECIAL / 01</span><h2>HAPPY<br><em>INTENSO.</em></h2><p>Consulta las promociones vigentes directamente con UK Bar.</p><strong>CONSULTAR CARTA ↗</strong></div>
+      <a class="v5-quick v5-happy" href="#tapwall">
+        <div><span class="v5-mini">HAPPY INTENSO / PROMO A CONFIRMAR</span><h2><span>HAPPY</span><br><em>INTENSO.</em></h2><p>De 17:00 a 18:30 · consulta vigencia y condiciones con UK Bar.</p><strong>CONSULTAR CARTA ↗</strong></div>
         <img src="assets/shops-pair.webp" width="660" height="635" alt="Dos schop en vasos con el logo original UK Bar" loading="lazy">
       </a>
       <a class="v5-quick v5-quick-menu" href="#carta"><span class="v5-mini">FOOD & DRINKS / 02</span><h2>MENÚ.</h2><p>La carta digital, clara y siempre a mano.</p><strong>VER NUESTRA CARTA ↗</strong></a>
@@ -88,6 +91,66 @@
     <div class="marquee" aria-label="Cervezas artesanales, rock británico, coctelería y buena compañía">
       <div class="marquee-track" aria-hidden="true">CRAFT BEER <b>✳</b> BRITISH ROCK <b>✳</b> GOOD FOOD <b>✳</b> GOOD COMPANY <b>✳</b> CRAFT BEER <b>✳</b> BRITISH ROCK <b>✳</b> GOOD FOOD <b>✳</b> GOOD COMPANY <b>✳</b></div>
     </div>
+
+    <section id="tapwall" class="v6-taproom" aria-labelledby="tapwall-title">
+      <div class="v6-taproom-head">
+        <div><span class="v6-kicker">✳ THE UK BAR TAP WALL / CARTA DE CERVEZAS 2026</span>
+          <h2 id="tapwall-title">WHAT'S ON<br><em>THE TAPS?</em></h2>
+          <p>Explora algunos estilos publicados en la carta de cervezas de UK Bar. La selección de barriles cambia: <strong>esto no confirma disponibilidad actual</strong>.</p>
+        </div>
+        <div class="v6-taproom-visual" aria-hidden="true"><span class="v6-taproom-ring">CRAFT<br>BEER<br><small>VALPO</small></span><span class="v6-taproom-small">FIND YOUR<br>PERFECT PINT ϟ</span></div>
+      </div>
+      <div class="v6-taproom-controls">
+        <div class="v6-control-group"><span id="v6-beer-profile-label">PERFIL DE SABOR</span>
+          <div class="v6-control-options" role="group" aria-labelledby="v6-beer-profile-label">
+            <button type="button" class="v6-filter is-selected" data-beer-filter="all" aria-pressed="true">TODAS</button>
+            <button type="button" class="v6-filter" data-beer-filter="suave" aria-pressed="false">SUAVES</button>
+            <button type="button" class="v6-filter" data-beer-filter="frutal" aria-pressed="false">FRUTALES</button>
+            <button type="button" class="v6-filter" data-beer-filter="intensa" aria-pressed="false">INTENSAS</button>
+          </div>
+        </div>
+        <div class="v6-control-group"><span id="v6-beer-size-label">TAMAÑO / PRECIO</span>
+          <div class="v6-control-options v6-size-options" role="group" aria-labelledby="v6-beer-size-label">
+            <button type="button" class="v6-size is-selected" data-beer-size="300" aria-pressed="true">300 CC</button>
+            <button type="button" class="v6-size" data-beer-size="pint" aria-pressed="false">PINTA</button>
+          </div>
+        </div>
+      </div>
+      <p id="v6-beer-status" class="v6-beer-status" aria-live="polite" aria-atomic="true">6 cervezas para explorar · precios de 300 cc</p>
+      <div class="v6-tap-list">
+        <article class="v6-tap" data-profile="suave" data-price-300="3900" data-price-pint="4900">
+          <div class="v6-tap-badge v6-badge-coda" aria-hidden="true"><span>CODA</span><small>CREAM ALE</small></div>
+          <div class="v6-tap-meta"><span>01 / CHILE · CREAM ALE</span><h3>CODA</h3><p>Suave, refrescante y equilibrada.</p><div class="v6-tap-figures"><span>4,7% ABV</span><span>18 IBU</span></div></div>
+          <div class="v6-tap-price"><strong class="v6-tap-amount">$3.900</strong><small class="v6-tap-volume">300 CC</small></div>
+        </article>
+        <article class="v6-tap" data-profile="intensa" data-price-300="5900" data-price-pint="6900">
+          <div class="v6-tap-badge v6-badge-jester" aria-hidden="true"><span>JESTER</span><small>LUPTOPIA</small></div>
+          <div class="v6-tap-meta"><span>02 / CHILE · IMPERIAL IPA</span><h3>JESTER LUPTOPIA</h3><p>Intensa, lupulada y cítrica.</p><div class="v6-tap-figures"><span>9,0% ABV</span><span>100 IBU</span></div></div>
+          <div class="v6-tap-price"><strong class="v6-tap-amount">$5.900</strong><small class="v6-tap-volume">300 CC</small></div>
+        </article>
+        <article class="v6-tap" data-profile="frutal intensa" data-price-300="5900" data-price-pint="6900">
+          <div class="v6-tap-badge v6-badge-tamango" aria-hidden="true"><span>TAMANGO</span><small>HAZY IPA</small></div>
+          <div class="v6-tap-meta"><span>03 / CHILE · HAZY IPA</span><h3>TAMANGO CORTA CORRIENTE</h3><p>Jugosa, tropical, con mango y maracuyá.</p><div class="v6-tap-figures"><span>6,0% ABV</span></div></div>
+          <div class="v6-tap-price"><strong class="v6-tap-amount">$5.900</strong><small class="v6-tap-volume">300 CC</small></div>
+        </article>
+        <article class="v6-tap" data-profile="suave" data-price-300="3900" data-price-pint="4900">
+          <div class="v6-tap-badge v6-badge-tubinger" aria-hidden="true"><span>TÜBINGER</span><small>IRISH RED ALE</small></div>
+          <div class="v6-tap-meta"><span>04 / CHILE · IRISH RED ALE</span><h3>TÜBINGER</h3><p>Caramelo, bizcocho y notas a frutos rojos.</p><div class="v6-tap-figures"><span>5,5% ABV</span><span>27 IBU</span></div></div>
+          <div class="v6-tap-price"><strong class="v6-tap-amount">$3.900</strong><small class="v6-tap-volume">300 CC</small></div>
+        </article>
+        <article class="v6-tap" data-profile="frutal" data-price-300="4500" data-price-pint="5500">
+          <div class="v6-tap-badge v6-badge-dolbek" aria-hidden="true"><span>D'OLBEK</span><small>MAQUI</small></div>
+          <div class="v6-tap-meta"><span>05 / CHILE · PALE ALE</span><h3>D'OLBEK MAQUI</h3><p>Pale Ale con maqui del sur de Chile.</p><div class="v6-tap-figures"><span>5,8% ABV</span></div></div>
+          <div class="v6-tap-price"><strong class="v6-tap-amount">$4.500</strong><small class="v6-tap-volume">300 CC</small></div>
+        </article>
+        <article class="v6-tap" data-profile="frutal intensa" data-price-300="4500" data-price-pint="5500">
+          <div class="v6-tap-badge v6-badge-horus" aria-hidden="true"><span>HORUS</span><small>ISIS / IPA</small></div>
+          <div class="v6-tap-meta"><span>06 / CHILE · AMERICAN IPA</span><h3>HORUS ISIS</h3><p>Cítrica y frutal, con amargor medio-alto.</p><div class="v6-tap-figures"><span>7,0% ABV</span><span>50 IBU</span></div></div>
+          <div class="v6-tap-price"><strong class="v6-tap-amount">$4.500</strong><small class="v6-tap-volume">300 CC</small></div>
+        </article>
+      </div>
+      <div class="v6-taproom-foot"><p>Información de la carta de octubre de 2026. Los perfiles son una guía orientativa; <strong>precios, barriles disponibles y condiciones deben confirmarse con UK Bar antes de pedir.</strong></p><a class="button button-red" href="https://wa.me/56937264991?text=Hola%20UK%20Bar%2C%20quisiera%20consultar%20qu%C3%A9%20cervezas%20de%20barril%20tienen%20disponibles." target="_blank" rel="noopener noreferrer">CONSULTAR BARRILES ↗</a></div>
+    </section>
 
     <section id="elbar" class="about section-padding" aria-labelledby="about-title">
       <div class="section-index"><span>01 / A PLACE TO BELONG</span><span>ESTO ES UK BAR</span></div>

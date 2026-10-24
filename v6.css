@@ -1,0 +1,209 @@
+/* UK BAR V6 — Poster-rock art direction / photographic, operable interface.
+   V5 assets and interactions preserved in a separate repository. */
+:root{--v6-red:#ed263e;--v6-red-deep:#b60920;--v6-cream:#f7e7c7;--v6-gold:#ecbc79;--v6-rust:#4b231d;--v6-ink:#090709}
+html{scroll-behavior:smooth}
+body{background:#0c0808}
+a:focus-visible,button:focus-visible{outline:3px solid #f9cd76;outline-offset:4px}
+img{max-width:100%}
+.proposal-banner{background:#efe4d0;color:#38231a}
+.site-header{height:81px;background:linear-gradient(90deg,#100a0aec,#060609ed),url(assets/grain.webp);border-bottom:2px solid #71291d;position:relative;z-index:30}
+.site-header:before{content:'';position:absolute;inset:0;background:url(assets/grain.webp) repeat;opacity:.22;mix-blend-mode:screen;pointer-events:none}
+.site-header .brand img{border:0;box-shadow:none;object-fit:contain;height:56px;width:56px}
+.site-header .brand-wordmark{font:900 31px/1 var(--pub-display);letter-spacing:-1.5px;text-shadow:2px 2px 0 #000;color:#f9eacb}
+.site-header .brand-wordmark em{color:#ec3047}
+.site-header .brand-wordmark small{font:800 8px var(--body);letter-spacing:2.9px;color:#d9b38b;margin-top:5px}
+.site-header .navigation a{font:900 14px/1 var(--display);letter-spacing:1.1px;color:#eed5b3}
+.site-header .navigation a:hover,.site-header .navigation a:first-child{color:#ed354a}
+.site-header .header-action{font:900 14px var(--display);border-radius:0;background:#b80d28;border:1px solid #ff4055;box-shadow:3px 4px 0 #100606}
+.brand-stripe{height:3px}
+.v6-hero{min-height:570px;background:#100808 url(assets/hero-v6.webp) center 47%/cover no-repeat;position:relative;overflow:hidden;isolation:isolate}
+.v6-hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#080606dd 0%,#100808bc 30%,#10080652 60%,transparent 88%),linear-gradient(0deg,#1a060947,transparent 40%);pointer-events:none;z-index:0}
+.v6-hero:after{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;background:radial-gradient(circle at 67% 55%,transparent 23%,#02010133 100%)}
+.v6-halftone{position:absolute;inset:0;background:url(assets/grain.webp) repeat;opacity:.36;mix-blend-mode:screen;pointer-events:none;z-index:1}
+.v6-hero-content{position:relative;z-index:5;max-width:920px;width:66%;padding:48px 0 49px 5.9%}
+.v6-crown{display:flex;align-items:center;gap:17px;color:#eec98d;font:900 50px/.85 var(--pub-display);text-shadow:2px 2px 0 #111;margin:0 0 11px}
+.v6-crown span{font:900 12px/1.4 var(--display);letter-spacing:5px;color:#e7cbad}
+.v6-hero #hero-title{font:900 clamp(52px,5.75vw,100px)/1.01 var(--pub-display);letter-spacing:-4.2px;max-width:100%;margin:14px 0 19px;text-shadow:3px 4px 0 #18090a,0 9px 20px #000c}
+.v6-hero #hero-title span{display:block;white-space:nowrap}
+.v6-hero #hero-title span.v6-cream{color:#f3e3c7;-webkit-text-fill-color:#f3e3c7;-webkit-text-stroke:0;background:none;filter:none;text-shadow:3px 3px 0 #422a24,0 8px 10px #050405c9}
+.v6-hero #hero-title span.v6-red{color:#e92c42;-webkit-text-fill-color:#e92c42;-webkit-text-stroke:0;background:none;filter:none;text-shadow:3px 3px 0 #4c0c16,0 8px 12px #000e}
+.v6-energy-line{display:flex;align-items:center;gap:9px;max-width:max-content;border-top:2px solid #d1aa77;padding-top:12px;font:900 clamp(12px,1.18vw,19px)/1.2 var(--display);letter-spacing:1.6px;color:#f7dca9;text-shadow:2px 2px #000}
+.v6-energy-line b{color:#e62d3d;font-size:19px}
+.v6-energy-line>span{color:#ee2b43;font-size:27px}
+.v6-intro{font:600 14px/1.65 var(--body);max-width:530px;color:#f4dfc3;text-shadow:0 3px 10px #000;letter-spacing:.2px;margin:17px 0 0}
+.v6-hero .hero-actions{margin-top:19px;gap:11px;display:flex;flex-wrap:wrap}
+.v6-hero .button{min-height:50px;font:900 15px var(--display);letter-spacing:.6px;border-radius:0;padding:0 18px;text-shadow:none;box-shadow:3px 4px 0 #1004049c}
+.v6-hero .button-red{background:#c90a29;border:1px solid #ff3954}
+.v6-hero .pub-outline{background:#0c0909de;color:#fbe9c6;border:2px solid #efdaa8}
+.v6-hero-location{font:800 11px var(--display);letter-spacing:2.3px;margin-top:24px;color:#f2c994;text-shadow:0 3px 6px #000}
+.v6-hero-location span{color:#dd253c;margin:0 7px}
+.v6-pub-poster{position:absolute;z-index:2;top:55px;left:-20px;transform:rotate(-9deg);width:118px;padding:18px 9px;background:#120a08d7;border:4px solid #bf85578c;box-shadow:5px 5px 14px #000b;text-align:center}
+.v6-pub-poster:before{content:'♛';display:block;font-size:22px;line-height:1;color:#eacb91}
+.v6-pub-poster span{font:900 18px var(--display);color:#f4e3c8}
+.v6-pub-poster b{display:block;font:900 23px/.94 var(--display);color:#dc2c41;letter-spacing:-.4px}
+.v6-pub-poster i{display:block;margin-top:8px;font:900 9px/1 var(--display);color:#d5b68c}
+.v6-hero-art{position:absolute;inset:0;pointer-events:none;z-index:3}
+.v6-art-stamp{position:absolute;top:10%;right:12%;border:3px double #f6d5a6;border-radius:50%;width:123px;height:123px;display:grid;place-content:center;text-align:center;background:#23100dda;color:#f6dcb6;transform:rotate(13deg);font:900 24px/.85 var(--display);letter-spacing:1px;opacity:.86;box-shadow:0 4px 22px #000c}
+.v6-art-stamp small{font-size:11px;color:#e02b45;letter-spacing:2px}
+.v6-roundel{position:absolute;top:41%;right:40%;border:4px solid #f3dcc291;border-radius:50%;width:92px;height:92px;display:grid;place-items:center;text-align:center;color:#efd5b2;font:900 17px/1 var(--display);letter-spacing:1.2px;background:#16274294;transform:rotate(-17deg);opacity:.55}
+.v6-side-sign{position:absolute;right:1.5%;top:15%;padding:17px 12px;border:4px solid #c18a59;box-shadow:5px 6px 17px #000e;background:#1b0f0ede;transform:rotate(4deg);font:900 20px/1.06 var(--display);letter-spacing:.4px;color:#f0d8b4}
+.v6-side-sign em{color:#e73548;font-style:normal}
+.v6-lightning{position:absolute;right:46%;top:26%;transform:rotate(-13deg);font:900 80px var(--display);color:#c71833;opacity:.65}
+.v6-features{background:#140808}
+.v5-features{min-height:0;border-top:5px solid #bd723b;border-bottom:5px solid #25100b}
+.v5-features .pub-feature{min-height:245px;max-height:none;padding:22px 6%;justify-content:flex-end;border-right:2px solid #180b0a;box-shadow:inset 0 0 0 1px #9b53363d}
+.v5-features .pub-feature:before{background:linear-gradient(0deg,#120809ee 0%,#0c0809b4 34%,#0d08095a 73%,#09060921 100%)}
+.v5-features .pub-feature-caption{top:16px;color:#f3d5a9}
+.v5-features .pub-feature h2{font:900 clamp(34px,3.6vw,56px)/.9 var(--pub-display);letter-spacing:-1.8px;color:#f9e5c0;text-shadow:3px 3px 0 #000e,0 0 12px #000}
+.v5-features .pub-feature p{font-size:12px;max-width:265px;margin-bottom:11px}
+.v5-features .pub-feature-link{height:38px;width:38px;right:19px;bottom:20px}
+.v5-features .pub-feature-food{background-position:52% 46%}
+.v5-features .pub-feature-beer{background-position:48% 47%}
+.v5-features .pub-feature-drinks{background-image:url(assets/cocktails.webp);background-position:51% 49%}
+.v5-quick-links{border-top:0;gap:3px;background:#120a09;padding:3px;grid-template-columns:1.45fr .78fr .78fr}
+.v5-quick{min-height:275px;padding:22px;border-color:#7c41276d}
+.v5-quick h2{font:900 clamp(39px,4.2vw,70px)/.96 var(--pub-display);color:#f2dbaf}
+.v5-quick h2 em{color:#f3223b}
+.v5-happy{background:linear-gradient(90deg,#1e090ae8,#26110eaa 50%,transparent),url(assets/british-wall.webp) center/cover}
+.v5-happy>div{max-width:63%}
+.v5-happy h2{font-size:clamp(43px,4.4vw,72px)}
+.v5-happy img{width:50%;height:100%;bottom:0;object-position:50% 55%}
+.v5-quick p{font-size:12px;line-height:1.45}
+.v5-quick strong{font:900 14px var(--display)}
+.v5-quick-menu{background-image:linear-gradient(0deg,#110809e8,transparent 72%),url(assets/pizza.webp)}
+.v5-quick-gallery{background-image:linear-gradient(0deg,#110809e8,transparent 72%),url(assets/bar-interior.webp)}
+.marquee{height:58px}
+.marquee-track{font-size:25px}
+.about h2 span{-webkit-text-stroke:1.5px #f4e3cb}
+.menu-section{border-top:5px solid #3c1c11}
+
+/* THE TAP WALL — interactive and accessible, not a claim of live inventory. */
+.v6-taproom{padding:88px max(5.5%,calc((100vw - 1500px)/2)) 74px;background:radial-gradient(ellipse at 65% 3%,#552e1c 0%,transparent 46%),linear-gradient(140deg,#0a080a,#1e1310 67%,#100809);border-top:6px solid #ba1729;border-bottom:7px solid #7a321d;color:#f0dfc1;position:relative;isolation:isolate}
+.v6-taproom:before{content:'';position:absolute;inset:0;background:url(assets/grain.webp) repeat;opacity:.19;mix-blend-mode:screen;pointer-events:none;z-index:-1}
+.v6-taproom:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#180e0dba,#180e0d93),url(assets/tap-wall-v6.webp) top right/900px auto no-repeat;z-index:-2}
+.v6-taproom-head{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center}
+.v6-kicker{font:900 12px var(--display);letter-spacing:3.2px;color:#e9af7b}
+.v6-taproom h2{font:900 clamp(60px,7.8vw,119px)/.94 var(--pub-display);letter-spacing:-3px;color:#f2deb9;text-shadow:3px 3px 0 #000;margin:21px 0}
+.v6-taproom h2 em{color:#e62f45;font-style:normal}
+.v6-taproom-head p{max-width:615px;color:#e1ccaf;font:500 15px/1.8 var(--body)}
+.v6-taproom-head p strong{color:#f4d092}
+.v6-taproom-visual{min-height:270px;position:relative;display:flex;align-items:center;justify-content:center;background:linear-gradient(#1a0e0a4d,#170c0840),url(assets/shops-pair.webp) center 47%/contain no-repeat}
+.v6-taproom-ring{display:grid;place-content:center;height:174px;width:174px;border:6px double #f1c88b;border-radius:50%;background:#190e0cc9;box-shadow:0 0 0 7px #24150e9e,0 15px 35px #000c;transform:rotate(-11deg);font:900 29px/.94 var(--display);text-align:center;color:#f4e0c3;letter-spacing:1.4px}
+.v6-taproom-ring small{font-size:13px;color:#e92c44}
+.v6-taproom-small{position:absolute;bottom:0;right:1%;font:900 13px var(--display);color:#ebbf81;text-align:right;letter-spacing:2px}
+.v6-taproom-controls{display:flex;align-items:end;justify-content:space-between;gap:22px;margin:46px 0 18px;padding-bottom:20px;border-bottom:1px solid #9b6448;flex-wrap:wrap}
+.v6-control-group>span{display:block;font:900 11px var(--display);color:#dab17e;letter-spacing:2px;margin-bottom:11px}
+.v6-control-options{display:flex;gap:7px;flex-wrap:wrap}
+.v6-filter,.v6-size{min-height:44px;padding:10px 19px;font:900 14px var(--display);letter-spacing:1px;background:#1b0f0f;color:#f1dabc;border:1px solid #765340;cursor:pointer}
+.v6-filter:hover,.v6-size:hover{border-color:#e9b278}
+.v6-filter.is-selected,.v6-size.is-selected{border-color:#e74d55;background:#b9162d;color:white}
+.v6-beer-status{font:800 12px var(--display);letter-spacing:2px;color:#deb481;margin:0 0 17px}
+.v6-tap-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.v6-tap{display:grid;grid-template-columns:100px minmax(0,1fr) auto;align-items:center;column-gap:20px;min-height:172px;padding:18px 20px;border:1px solid #8f5b428a;background:linear-gradient(115deg,#2b1713d9,#0c0909d9 70%);box-shadow:inset 0 0 0 2px #160b0a,0 4px 13px #0007}
+.v6-tap[hidden]{display:none}
+.v6-tap-badge{display:flex;flex-direction:column;align-items:center;justify-content:center;width:90px;height:90px;border:6px double #e3bd83;border-radius:50%;background:#52251b;box-shadow:0 0 0 4px #22100c,0 5px 12px #0008;transform:rotate(-3deg);text-align:center;line-height:1.12}
+.v6-tap-badge span{font:900 16px var(--display);letter-spacing:-.5px}
+.v6-tap-badge small{font:900 9px var(--display);color:#eedab7;margin-top:4px}
+.v6-badge-coda{background:#122d4e}.v6-badge-jester{background:#a21a26}.v6-badge-tamango{background:#bc6c23}.v6-badge-tubinger{background:#73221d}.v6-badge-dolbek{background:#294823}.v6-badge-horus{background:#9a782e}
+.v6-tap-meta>span{font:900 10px var(--display);letter-spacing:1.3px;color:#dca66d}
+.v6-tap h3{font:900 clamp(23px,2.2vw,34px)/1 var(--display);letter-spacing:.1px;color:#f8e4bf;margin:8px 0 6px}
+.v6-tap-meta>p{font:500 12px/1.55 var(--body);color:#ddbea7;margin:0}
+.v6-tap-figures{display:flex;gap:11px;margin-top:10px;font:900 11px var(--display);color:#dfa962;letter-spacing:1px}
+.v6-tap-figures span{border:1px solid #79543c;padding:3px 6px}
+.v6-tap-price{display:flex;flex-direction:column;align-items:end;gap:3px;white-space:nowrap}
+.v6-tap-price strong{font:900 26px var(--display);color:#f1c382}
+.v6-tap-price small{font:900 11px var(--display);color:#dcc5aa;letter-spacing:1.5px}
+.v6-taproom-foot{display:flex;gap:30px;align-items:center;justify-content:space-between;padding-top:29px}
+.v6-taproom-foot p{max-width:830px;font:500 12px/1.7 var(--body);color:#d4b899}
+.v6-taproom-foot p strong{color:#f3d5a4}
+.v6-taproom-foot .button{min-width:202px;font:900 14px var(--display)}
+/* Cosmetic details and contrast polish */
+.v5-agenda{border-top:3px solid #d1283e}
+.menu-section .menu-grid{scroll-margin-top:95px}
+@media(max-width:1320px){
+ .v6-hero #hero-title{font-size:clamp(50px,5.6vw,79px)}
+ .v6-hero-content{width:73%}
+ .v6-art-stamp{right:10%;top:6%}
+ .v6-side-sign{font-size:15px}
+ .v6-tap{grid-template-columns:82px 1fr auto;padding:16px 13px;gap:12px}
+ .v6-tap-badge{height:74px;width:74px}
+ .v6-tap-badge span{font-size:13px}
+ .v6-tap-price strong{font-size:22px}
+}
+@media(max-width:950px){
+ .v6-hero{min-height:650px;background-position:61% 49%}
+ .v6-hero-content{width:84%;padding:90px 5% 72px}
+ .v6-hero #hero-title{font-size:clamp(52px,7.4vw,74px)}
+ .v6-side-sign,.v6-art-stamp,.v6-roundel,.v6-pub-poster{display:none}
+ .v5-features .pub-feature h2{font-size:clamp(29px,3.9vw,42px)}
+ .v5-quick-links{grid-template-columns:1fr 1fr}
+ .v5-happy{grid-column:span 2}
+ .v6-tap-list{grid-template-columns:1fr}
+ .v6-tap{grid-template-columns:95px 1fr auto;padding:18px}
+ .v6-tap-badge{height:85px;width:85px}
+ .v6-tap-badge span{font-size:15px}
+ .v6-taproom{padding:65px 5%}
+ .v6-taproom-head{grid-template-columns:1.4fr .8fr}
+}
+@media(max-width:620px){
+ .site-header{height:76px}
+ .site-header .brand-wordmark{font-size:24px}
+ .v6-hero{min-height:705px;background-position:70% 45%;background-size:auto 100%}
+ .v6-hero:before{background:linear-gradient(90deg,#080506e6 0%,#130809b4 56%,#1b080954 100%)}
+ .v6-hero:after{background:linear-gradient(0deg,#090508d6,transparent 65%)}
+ .v6-hero-content{width:100%;padding:73px 5% 45px}
+ .v6-crown{font-size:39px;margin-bottom:15px}
+ .v6-crown span{font-size:10px;letter-spacing:3px}
+ .v6-hero #hero-title{font-size:clamp(43px,10.65vw,66px);letter-spacing:-1.5px;margin:18px 0 27px;line-height:1.04}
+ .v6-hero #hero-title span{white-space:normal;max-width:440px}
+ .v6-energy-line{font-size:12px;letter-spacing:.25px;gap:5px;flex-wrap:wrap}
+ .v6-energy-line>span{font-size:18px}
+ .v6-energy-line b{font-size:14px}
+ .v6-intro{font-size:13px;line-height:1.7;max-width:330px;margin-top:24px}
+ .v6-hero .hero-actions{display:flex;flex-direction:column;align-items:stretch;gap:11px;width:min(342px,100%)}
+ .v6-hero .button{font-size:14px;width:100%;min-height:51px}
+ .v6-hero-location{font-size:10px;letter-spacing:1.2px;margin-top:25px}
+ .v5-features{display:grid;grid-template-columns:1fr}
+ .v5-features .pub-feature{min-height:215px;padding:20px 6%}
+ .v5-features .pub-feature h2{font-size:40px}
+ .v5-features .pub-feature p{font-size:12px}
+ .v5-quick-links{grid-template-columns:1fr}
+ .v5-happy{grid-column:span 1;min-height:295px}
+ .v5-happy h2{font-size:clamp(39px,10.4vw,58px)}
+ .v5-happy>div{max-width:65%}
+ .v5-happy img{width:52%}
+ .v5-quick{min-height:220px;padding:22px}
+ .v5-quick h2{font-size:48px}
+ .v6-taproom{padding:54px 5%}
+ .v6-taproom-head{display:block}
+ .v6-taproom h2{font-size:clamp(52px,11vw,83px)}
+ .v6-taproom-head p{font-size:13px}
+ .v6-taproom-visual{min-height:200px;background-size:auto 240px}
+ .v6-taproom-ring{height:117px;width:117px;border-width:4px;font-size:19px}
+ .v6-taproom-ring small{font-size:10px}
+ .v6-taproom-small{bottom:4px}
+ .v6-taproom-controls{margin-top:26px}
+ .v6-filter,.v6-size{min-height:41px;font-size:12px;padding:9px 12px}
+ .v6-control-options{gap:6px}
+ .v6-tap{grid-template-columns:59px minmax(0,1fr);gap:13px;padding:16px 13px;min-height:163px}
+ .v6-tap-badge{height:55px;width:55px;border-width:3px;box-shadow:0 0 0 2px #281310}
+ .v6-tap-badge span{font-size:10px}
+ .v6-tap-badge small{font-size:6px}
+ .v6-tap h3{font-size:24px}
+ .v6-tap-meta>span{font-size:9px}
+ .v6-tap-price{grid-column:2;flex-direction:row;align-items:center;gap:12px;padding-top:5px}
+ .v6-tap-price strong{font-size:23px}
+ .v6-taproom-foot{display:block}
+ .v6-taproom-foot .button{width:100%;margin-top:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .v6-hero *, .v6-taproom *{animation:none!important;transition:none!important}
+}
+
+/* Very small handsets: do not let the music headline establish a 325px minimum. */
+@media(max-width:380px){
+  .v5-agenda{grid-template-columns:minmax(0,1fr)}
+  .v5-agenda>div{min-width:0}
+  .v5-agenda h2{font-size:clamp(35px,9vw,49px);letter-spacing:-2px;overflow-wrap:anywhere}
+}
