@@ -22,18 +22,10 @@
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="preload" href="assets/hero-v6.webp" as="image">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="v4.css">
-  <link rel="stylesheet" href="v5.css">
-  <link rel="stylesheet" href="v6.css">
-  <link rel="stylesheet" href="v7-experience.css">
-  <script src="script.js" defer></script>
-  <script src="v4.js" defer></script>
-  <script src="v5.js" defer></script>
-  <script src="v6.js" defer></script>
-  <script src="v7-experience.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media=&quot;all&quot;"><noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" href="assets/hero-v6.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="ukbar.min.css">
+  <script src="ukbar.min.js" defer></script>
   <script type="application/ld+json" id="business-data">{
     "@context":"https://schema.org",
     "@type":"Restaurant",
@@ -55,7 +47,7 @@
   <div class="proposal-banner"><span class="proposal-dot"></span> V6 EN DESARROLLO · VISTA PREVIA · V5 CONSERVADA</div>
   <div class="brand-stripe" aria-hidden="true"><span></span><span></span><span></span></div>
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="UK Bar, inicio">
+    <a class="brand" href="#inicio" aria-label="UK BAR — ir al inicio">
       <img src="assets/logo-ukbar.webp" width="58" height="58" alt="Logotipo de UK Bar" />
       <span class="brand-wordmark">UK <em>BAR</em><small>VALPARAÍSO · CHILE</small></span>
     </a>
@@ -67,7 +59,7 @@
       <a href="#galeria">GALERÍA</a>
       <a href="#ambiente">AMBIENTE</a>
     </nav>
-    <nav class="language-nav" aria-label="Idioma"><span aria-current="page" lang="es">ES</span><a href="en/" hreflang="en" lang="en" aria-label="View site in English">EN</a></nav>
+    <nav class="language-nav" aria-label="Idioma"><span aria-current="page" lang="es">ES</span><a href="en/" hreflang="en" lang="en" aria-label="EN — View site in English">EN</a></nav>
     <a class="button button-small button-red header-action" href="https://wa.me/56937264991?text=Hola%20UK%20Bar%2C%20quisiera%20consultar%20por%20una%20reserva." target="_blank" rel="noopener noreferrer">CONSULTAR RESERVA <span aria-hidden="true">↗</span></a>
     <button class="menu-toggle" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
   </header>
@@ -113,7 +105,7 @@
       <a class="v5-quick v5-quick-menu" href="carta/"><span class="v5-mini">COMIDA Y BEBIDAS / 02</span><h2>MENÚ.</h2><p>La carta digital, clara y siempre a mano.</p><strong>VER NUESTRA CARTA ↗</strong></a>
       <a class="v5-quick v5-quick-gallery" href="#galeria"><span class="v5-mini">LA EXPERIENCIA / 03</span><h2>GALERÍA.</h2><p>Los sabores y momentos que hacen único al bar.</p><strong>CONOCE UK BAR ↗</strong></a>
     </section>
-    <div class="marquee" aria-label="Cervezas artesanales, rock británico, coctelería y buena compañía">
+    <div class="marquee" aria-hidden="true">
       <div class="marquee-track" aria-hidden="true">CERVEZA ARTESANAL <b>✳</b> ROCK BRITÁNICO <b>✳</b> BUENA COMIDA <b>✳</b> BUENA COMPAÑÍA <b>✳</b> CERVEZA ARTESANAL <b>✳</b> ROCK BRITÁNICO <b>✳</b> BUENA COMIDA <b>✳</b> BUENA COMPAÑÍA <b>✳</b></div>
     </div>
 
@@ -301,7 +293,7 @@
   <nav class="mobile-action-bar" aria-label="Accesos rápidos">
     <a href="carta/" aria-label="Ir a la carta">CARTA</a>
     <a href="https://www.google.com/maps/search/?api=1&amp;query=UK+Bar+Almirante+Montt+129+Valparaiso" target="_blank" rel="noopener noreferrer" aria-label="Cómo llegar en Google Maps">CÓMO LLEGAR</a>
-    <a href="#reserva" aria-label="Consultar reserva">RESERVAR ↗</a>
+    <a href="#reserva" aria-label="RESERVAR — consultar una mesa">RESERVAR ↗</a>
   </nav>
   <footer class="footer">
     <div class="footer-top"><div><img src="assets/logo-ukbar.webp" alt="" loading="lazy" width="72" height="72"><strong>UK<span>BAR.</span></strong><p>ROCK BRITÁNICO, BUENA COMIDA<br>Y BUENA COMPAÑÍA.</p></div><nav aria-label="Enlaces del pie"><a href="#elbar">EL BAR</a><a href="carta/">LA CARTA</a><a href="#galeria">GALERÍA</a><a href="#ambiente">AMBIENTE</a><a href="https://www.instagram.com/ukbarvalpo/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="#visitanos">CONTACTO ↗</a></nav></div>
