@@ -1,0 +1,1242 @@
+[
+  {
+    "category": "picadas",
+    "name": "Depeche Mode",
+    "name_en": "Depeche Mode",
+    "description_es": "300g Papas Fritas naturales, Cheddar con Tocino, Mechada o Champiñones.",
+    "description_en": "300g natural French fries, Cheddar with Bacon, Shredded Beef, or Mushrooms.",
+    "prices": [
+      7900
+    ],
+    "special": ""
+  },
+  {
+    "category": "picadas",
+    "name": "Gorillaz",
+    "name_en": "Gorillaz",
+    "description_es": "Nachos artesanales con orégano, merkén y guacamole.",
+    "description_en": "Artisanal nachos with oregano, merken, and guacamole.",
+    "prices": [
+      6900
+    ],
+    "special": ""
+  },
+  {
+    "category": "picadas",
+    "name": "New Order",
+    "name_en": "New Order",
+    "description_es": "10 sopaipillas de cóctel con pebre.",
+    "description_en": "10 cocktail sopaipillas with pebre.",
+    "prices": [
+      4900
+    ],
+    "special": ""
+  },
+  {
+    "category": "picadas",
+    "name": "The Cure",
+    "name_en": "The Cure",
+    "description_es": "400g Papas Fritas naturales con salsa de Ajo y Cilantro.",
+    "description_en": "400g hand-cut fries with garlic and cilantro sauce.",
+    "prices": [
+      6900
+    ],
+    "special": ""
+  },
+  {
+    "category": "picadas",
+    "name": "The Rolling Stones",
+    "name_en": "The Rolling Stones",
+    "description_es": "Vacuno, pollo, camarón, sopaipillas, empanaditas, brochetas caprese y pebre.",
+    "description_en": "Beef, chicken, shrimp, sopaipillas, mini empanadas, caprese skewers, and pebre.",
+    "prices": [
+      18900
+    ],
+    "special": ""
+  },
+  {
+    "category": "quesadillas",
+    "name": "Annie Lennox",
+    "name_en": "Annie Lennox",
+    "description_es": "Queso de Cabra, Tomate Cherry, Pesto.",
+    "description_en": "Goat cheese, Cherry tomato, Pesto.",
+    "prices": [
+      8900
+    ],
+    "special": ""
+  },
+  {
+    "category": "quesadillas",
+    "name": "Calvin Harris",
+    "name_en": "Calvin Harris",
+    "description_es": "Carne mechada, Pesto, Queso Azul.",
+    "description_en": "Shredded beef, Pesto, Blue cheese.",
+    "prices": [
+      9900
+    ],
+    "special": ""
+  },
+  {
+    "category": "quesadillas",
+    "name": "Erasure",
+    "name_en": "Erasure",
+    "description_es": "Pollo, Pimentón, Cilantro.",
+    "description_en": "Chicken, Bell pepper, Cilantro.",
+    "prices": [
+      7900
+    ],
+    "special": ""
+  },
+  {
+    "category": "quesadillas",
+    "name": "Pulp",
+    "name_en": "Pulp",
+    "description_es": "Pollo, Champiñones, Salsa Barbecue.",
+    "description_en": "Chicken, Mushrooms, Barbecue sauce.",
+    "prices": [
+      8900
+    ],
+    "special": ""
+  },
+  {
+    "category": "quesadillas",
+    "name": "Oasis",
+    "name_en": "Oasis",
+    "description_es": "Carne Mechada, Cheddar.",
+    "description_en": "Shredded beef, Cheddar.",
+    "prices": [
+      9900
+    ],
+    "special": ""
+  },
+  {
+    "category": "quesadillas",
+    "name": "Radiohead",
+    "name_en": "Radiohead",
+    "description_es": "Choclo, Champiñones, cebolla caramelizada.",
+    "description_en": "Corn, Mushrooms, Caramelized onion.",
+    "prices": [
+      7900
+    ],
+    "special": ""
+  },
+  {
+    "category": "chorrillanas",
+    "name": "Adele",
+    "name_en": "Adele",
+    "description_es": "Papas fritas, Pollo salteado, salsa blanca de Champiñones, queso.",
+    "description_en": "French fries, sautéed chicken, white mushroom sauce, cheese.",
+    "prices": [
+      13900,
+      18900,
+      24900
+    ],
+    "special": ""
+  },
+  {
+    "category": "chorrillanas",
+    "name": "Amy Winehouse (Vegana)",
+    "name_en": "Amy Winehouse (Vegan)",
+    "description_es": "Papas fritas, Seitán, soya, cebolla, tomates, pimentón y sésamo.",
+    "description_en": "French fries, seitan, soy sauce, onions, tomatoes, peppers and sesame.",
+    "prices": [
+      11900,
+      14900,
+      null
+    ],
+    "special": "vegano"
+  },
+  {
+    "category": "chorrillanas",
+    "name": "Dua Lipa (Vegetariana)",
+    "name_en": "Dua Lipa (Vegetarian)",
+    "description_es": "Papas fritas, champiñones al pesto y Roquefort, queso de cabra.",
+    "description_en": "French fries, pesto mushrooms, Roquefort and goat cheese.",
+    "prices": [
+      12900,
+      17900,
+      23900
+    ],
+    "special": "vegetariano"
+  },
+  {
+    "category": "chorrillanas",
+    "name": "The Beatles (Tradicional)",
+    "name_en": "The Beatles (Traditional)",
+    "description_es": "Papas Fritas, Cebolla, Huevos, Carne, Longaniza y Queso.",
+    "description_en": "French fries, onions, eggs, beef, longaniza sausage and cheese.",
+    "prices": [
+      17900,
+      24900,
+      32900
+    ],
+    "special": ""
+  },
+  {
+    "category": "chorrillanas",
+    "name": "The Beatles (Mechada)",
+    "name_en": "The Beatles (Shredded Beef)",
+    "description_es": "Papas Fritas, Cebolla, Huevos, Mechada, Longaniza y Queso.",
+    "description_en": "French fries, onions, eggs, shredded beef, longaniza sausage and cheese.",
+    "prices": [
+      15900,
+      22900,
+      29900
+    ],
+    "special": ""
+  },
+  {
+    "category": "sandwiches",
+    "name": "Deep Purple",
+    "name_en": "Deep Purple",
+    "description_es": "Mozzarella, Queso de Cabra, Tomate Cherry al Pesto.",
+    "description_en": "Mozzarella, Goat Cheese, Pesto Cherry Tomato.",
+    "prices": [
+      9900,
+      8900,
+      8500
+    ],
+    "special": ""
+  },
+  {
+    "category": "sandwiches",
+    "name": "Motorhead",
+    "name_en": "Motorhead",
+    "description_es": "Tocino, Pepinillos, Cheddar, Cebolla Morada, BBQ.",
+    "description_en": "Bacon, Pickles, Cheddar, Red Onion, BBQ.",
+    "prices": [
+      9900,
+      8900,
+      null
+    ],
+    "special": ""
+  },
+  {
+    "category": "sandwiches",
+    "name": "Peter Gabriel",
+    "name_en": "Peter Gabriel",
+    "description_es": "Champiñones, Queso Azul, Cebolla Caramelizada.",
+    "description_en": "Mushrooms, Blue Cheese, Caramelized Onion.",
+    "prices": [
+      9900,
+      8900,
+      8500
+    ],
+    "special": ""
+  },
+  {
+    "category": "sandwiches",
+    "name": "Pink Floyd",
+    "name_en": "Pink Floyd",
+    "description_es": "Tomate, Palta, Mayonesa y Queso.",
+    "description_en": "Tomato, Avocado, Mayonnaise, and Cheese.",
+    "prices": [
+      9900,
+      8900,
+      8500
+    ],
+    "special": ""
+  },
+  {
+    "category": "sandwiches",
+    "name": "Queen",
+    "name_en": "Queen",
+    "description_es": "Huevo Frito, Cebolla Caramelizada.",
+    "description_en": "Fried Egg, Caramelized Onion.",
+    "prices": [
+      8900,
+      7900,
+      7500
+    ],
+    "special": ""
+  },
+  {
+    "category": "sandwiches",
+    "name": "Yes",
+    "name_en": "Yes",
+    "description_es": "Camarones salteados, Palta, Mayonesa.",
+    "description_en": "Sautéed Shrimp, Avocado, Mayonnaise.",
+    "prices": [
+      10900,
+      9900,
+      null
+    ],
+    "special": ""
+  },
+  {
+    "category": "pizzas",
+    "name": "Boy George",
+    "name_en": "Boy George",
+    "description_es": "Camarones Salteados, Palta y Cebolla Morada.",
+    "description_en": "Sautéed shrimp, avocado, and red onion.",
+    "prices": [
+      13900,
+      19900
+    ],
+    "special": ""
+  },
+  {
+    "category": "pizzas",
+    "name": "Calvin Harris",
+    "name_en": "Calvin Harris",
+    "description_es": "Carne Mechada, Pesto, Queso Azul.",
+    "description_en": "Shredded beef, pesto, blue cheese.",
+    "prices": [
+      12900,
+      18900
+    ],
+    "special": ""
+  },
+  {
+    "category": "pizzas",
+    "name": "David Bowie",
+    "name_en": "David Bowie",
+    "description_es": "Trozos de Vacuno salteados a la peruana, cebolla y tomates. Consulta por opción con Seitan!",
+    "description_en": "Peruvian-style sautéed beef chunks, onion, and tomatoes. Ask for the seitan option!",
+    "prices": [
+      null,
+      15900
+    ],
+    "special": ""
+  },
+  {
+    "category": "pizzas",
+    "name": "Dido",
+    "name_en": "Dido",
+    "description_es": "Jamón Serrano, Queso Azul, Albahaca.",
+    "description_en": "Serrano ham, blue cheese, basil.",
+    "prices": [
+      11900,
+      16900
+    ],
+    "special": ""
+  },
+  {
+    "category": "pizzas",
+    "name": "Elton John",
+    "name_en": "Elton John",
+    "description_es": "Pollo, Tocino, Queso Cheddar, Salsa Barbecue.",
+    "description_en": "Chicken, bacon, cheddar cheese, barbecue sauce.",
+    "prices": [
+      11900,
+      16900
+    ],
+    "special": ""
+  },
+  {
+    "category": "pizzas",
+    "name": "Elvis Costello",
+    "name_en": "Elvis Costello",
+    "description_es": "Tomates Cherry, Queso de Cabra, Pesto.",
+    "description_en": "Cherry tomatoes, goat cheese, pesto.",
+    "prices": [
+      10900,
+      15900
+    ],
+    "special": ""
+  },
+  {
+    "category": "pizzas",
+    "name": "Eric Clapton",
+    "name_en": "Eric Clapton",
+    "description_es": "Tocino, Cebolla Caramelizada, Champiñones, Pimentón.",
+    "description_en": "Bacon, caramelized onion, mushrooms, bell pepper.",
+    "prices": [
+      10900,
+      15900
+    ],
+    "special": ""
+  },
+  {
+    "category": "pizzas",
+    "name": "Freddie Mercury",
+    "name_en": "Freddie Mercury",
+    "description_es": "Carne Mechada, Tocino, Aceitunas, Cebolla Morada.",
+    "description_en": "Shredded beef, bacon, olives, red onion.",
+    "prices": [
+      12900,
+      18900
+    ],
+    "special": ""
+  },
+  {
+    "category": "pizzas",
+    "name": "George Michael",
+    "name_en": "George Michael",
+    "description_es": "Pollo, Pepperonni, Choclo, Cebolla Morada.",
+    "description_en": "Chicken, pepperoni, corn, red onion.",
+    "prices": [
+      11900,
+      16900
+    ],
+    "special": ""
+  },
+  {
+    "category": "pizzas",
+    "name": "Morrissey (Vegetariana)",
+    "name_en": "Morrissey (Vegetariana)",
+    "description_es": "Champiñones, Choclo, Pimentón, Aceitunas",
+    "description_en": "Mushrooms, corn, bell pepper, olives.",
+    "prices": [
+      10900,
+      15900
+    ],
+    "special": "vegetariano"
+  },
+  {
+    "category": "pizzas",
+    "name": "Peter Gabriel (Vegetariana)",
+    "name_en": "Peter Gabriel (Vegetariana)",
+    "description_es": "Queso Azul, Champiñones, Cebolla Caramelizada, Albahaca.",
+    "description_en": "Blue cheese, mushrooms, caramelized onion, basil.",
+    "prices": [
+      10900,
+      15900
+    ],
+    "special": "vegetariano"
+  },
+  {
+    "category": "pizzas",
+    "name": "Simply Red",
+    "name_en": "Simply Red",
+    "description_es": "Carne Mechada, Tocino, Queso Cheddar.",
+    "description_en": "Shredded beef, bacon, cheddar cheese.",
+    "prices": [
+      13900,
+      19900
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Bitter Sweet Symphony",
+    "name_en": "Bitter Sweet Symphony",
+    "description_es": "Ballantines, Licor de Pomelo, Campari, Naranja, Limón, Angostura.",
+    "description_en": "Ballantine's, grapefruit liqueur, Campari, orange, lemon, Angostura bitters.",
+    "prices": [
+      5900
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Coquette",
+    "name_en": "Coquette",
+    "description_es": "Ballantines, Licor de Cassis, Frambuesa, Miel, Crema, Salsa de Chocolate.",
+    "description_en": "Ballantine's, cassis liqueur, raspberry, honey, cream, chocolate sauce.",
+    "prices": [
+      7500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Coffee Martini",
+    "name_en": "Coffee Martini",
+    "description_es": "Stolichnaya Macerado en Café en Grano, Kahlua, Jarabe de Miel.",
+    "description_en": "Coffee bean-macerated Stolichnaya, Kahlua, honey syrup.",
+    "prices": [
+      7500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Dame un Beso",
+    "name_en": "Dame un Beso",
+    "description_es": "Gin, Licor de Frutilla, Jugo de Limón, Sirope simple, Soda.",
+    "description_en": "Gin, strawberry liqueur, lemon juice, simple syrup, soda.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Demórame Otra Vez",
+    "name_en": "Demórame Otra Vez",
+    "description_es": "Vodka de Mora, Frambuesa, Frutilla, Limón y Crema.",
+    "description_en": "Blackberry vodka, raspberry, strawberry, lemon, and cream.",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Flechazo",
+    "name_en": "Flechazo",
+    "description_es": "Vodka Stolichnaya, Campari, Piña, Maracuyá, Limón, Cerveza Rubia.",
+    "description_en": "Stolichnaya vodka, Campari, pineapple, passion fruit, lemon, blonde beer.",
+    "prices": [
+      7500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Gin Passion",
+    "name_en": "Gin Passion",
+    "description_es": "Gin, Licor de Maracuyá, Sirope simple, Jugo de Limón, Soda.",
+    "description_en": "Gin, passion fruit liqueur, simple syrup, lemon juice, soda.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Green Chilli Pepper Gin",
+    "name_en": "Green Chilli Pepper Gin",
+    "description_es": "Gin Bombay Sapphire, Ají Verde, Jugo de Limón, Sirope simple, Albúmina.",
+    "description_en": "Bombay Sapphire gin, green chili, lemon juice, simple syrup, egg white.",
+    "prices": [
+      5900
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Hot Mule",
+    "name_en": "Hot Mule",
+    "description_es": "Fireball Cinnamon Whisky, Jengibre, Cerveza Red Ale, Limón.",
+    "description_en": "Fireball Cinnamon Whisky, ginger, Red Ale beer, lemon.",
+    "prices": [
+      7500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Limoncello Sour",
+    "name_en": "Limoncello Sour",
+    "description_es": "Limoncello de fabricación artesanal, Limón, Sirope simple, Albúmina.",
+    "description_en": "Artisanal limoncello, lemon, simple syrup, egg white.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Limoncello Spritz",
+    "name_en": "Limoncello Spritz",
+    "description_es": "Limoncello de fabricación artesanal, Espumante Brut, Soda.",
+    "description_en": "Artisanal limoncello, Brut sparkling wine, soda.",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Kashmir",
+    "name_en": "Kashmir",
+    "description_es": "Vodka macerado con Té Chai, Whisky, Bacardi Manzana, Jugo de Naranja, Sirope simple.",
+    "description_en": "Vodka macerated with Chai tea, whisky, Bacardi Apple, orange juice, simple syrup.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Maracuyá on Fire",
+    "name_en": "Maracuyá on Fire",
+    "description_es": "Fireball Cinnamon Whisky, Maracuyá, Albahaca, Espumante.",
+    "description_en": "Fireball Cinnamon Whisky, passion fruit, basil, sparkling wine.",
+    "prices": [
+      7500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Machucao",
+    "name_en": "Machucao",
+    "description_es": "Tequila, Membrillo, Jugo de limón, Sirope simple. Vaso escarchado.",
+    "description_en": "Tequila, quince paste, lemon juice, simple syrup. Frosted rim glass.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Panchito Collins",
+    "name_en": "Panchito Collins",
+    "description_es": "Ron Macerado con Huesillos, Sirope de Chancaca Jugo de Limón, Soda.",
+    "description_en": "Rum infused with Chilean dried peaches, chancaca syrup, lemon and soda.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Papayapapiri",
+    "name_en": "Papayapapiri",
+    "description_es": "Ron de Papaya, Ron Havana Añejo, Licor de Flor de Sauco, Limón, Sirope simple.",
+    "description_en": "Papaya rum, Havana Añejo rum, elderflower liqueur, lemon, simple syrup.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Pisco Sour Ají Verde",
+    "name_en": "Pisco Sour Ají Verde",
+    "description_es": "Pisco 40°, Jugo de Limón, Ají Verde, Sirope Simple, Albúmina.",
+    "description_en": "Pisco 40°, lemon juice, green chili, simple syrup, egg white.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Pisco Sour Peruano",
+    "name_en": "Pisco Sour Peruano",
+    "description_es": "Pisco Quebranta, Jugo de Limón Sutil, Sirope Simple, Albúmina.",
+    "description_en": "Quebranta pisco, Key lime juice, simple syrup, egg white.",
+    "prices": [
+      7500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Pisco Sour Pie de Limón",
+    "name_en": "Pisco Sour Pie de Limón",
+    "description_es": "Pisco 40°, Jugo de Limón, Sirope simple, Leche Condensada.",
+    "description_en": "Pisco 40°, lemon juice, simple syrup, condensed milk.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Pisco Sour Pistacho",
+    "name_en": "Pisco Sour Pistacho",
+    "description_es": "Pisco 40°macerado con pistachos, Jugo de Limón, Sirope simple.",
+    "description_en": "Pisco 40° macerated with pistachios, lemon juice, simple syrup.",
+    "prices": [
+      5900
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Say My Name!",
+    "name_en": "Say My Name!",
+    "description_es": "Barceló Añejo, Bacardi Coco, Maracuyá, Mango, Jugo de Limón y crema.",
+    "description_en": "Barceló Añejo, Bacardi Coconut, passion fruit, mango, lemon juice, and cream.",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Say Not Cream",
+    "name_en": "Say Not Cream",
+    "description_es": "El Gobernador 35°, Licor de Pomelo, Maracuyá, Mango, Limón y Cerveza Rubia.",
+    "description_en": "El Gobernador 35°, grapefruit liqueur, passion fruit, mango, lemon, and blonde beer.",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Sweet Dreams",
+    "name_en": "Sweet Dreams",
+    "description_es": "Gin, Licor de Flor de Sauco, Blue Curacao, Limón, Sirope simple, Albúmina.",
+    "description_en": "Gin, elderflower liqueur, Blue Curaçao, lemon, simple syrup, egg white.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Tequila Margarita Brava",
+    "name_en": "Tequila Margarita Brava",
+    "description_es": "Tequila, Triple Sec, Jugo de Limón, Licor de Ají, Sirope simple.",
+    "description_en": "Tequila, triple sec, lemon juice, chili liqueur, simple syrup.",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "autor",
+    "name": "Vaya Baya!",
+    "name_en": "Vaya Baya!",
+    "description_es": "Gin, Licor de Cassis, Ramazzotti, Pulpa Frambuesa, Pulpa Frutilla, Jugo de Limón.",
+    "description_en": "Gin, cassis liqueur, Ramazzotti, raspberry pulp, strawberry pulp, lemon juice.",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Adiós MF",
+    "name_en": "Adiós MF",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Amaretto Sour",
+    "name_en": "Amaretto Sour",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Aperol Spritz",
+    "name_en": "Aperol Spritz",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6900
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Ramazzotti Spritz",
+    "name_en": "Ramazzotti Spritz",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6900
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Blue Hawaii",
+    "name_en": "Blue Hawaii",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5900
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Caipiriñas",
+    "name_en": "Caipiriñas",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Clavo Oxidado",
+    "name_en": "Clavo Oxidado",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6900
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Clover Club",
+    "name_en": "Clover Club",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5900
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Cynar Negroni",
+    "name_en": "Cynar Negroni",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Chardonnay Sour",
+    "name_en": "Chardonnay Sour",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Pisco Sour",
+    "name_en": "Pisco Sour",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Negroni",
+    "name_en": "Negroni",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Daiquiris Frutales",
+    "name_en": "Daiquiris Frutales",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "John Collins",
+    "name_en": "John Collins",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Long Island Ice Tea",
+    "name_en": "Long Island Ice Tea",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Maracujack",
+    "name_en": "Maracujack",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Mojito Tradicional",
+    "name_en": "Mojito Tradicional",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Mojito Frutal",
+    "name_en": "Mojito Frutal",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5900
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Moscow Mule",
+    "name_en": "Moscow Mule",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Orgasmo",
+    "name_en": "Orgasmo",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Piña Colada",
+    "name_en": "Piña Colada",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5900
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Piña Colada XL (500 ml.)",
+    "name_en": "Piña Colada XL (500 ml.)",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      7500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Ruso Blanco",
+    "name_en": "Ruso Blanco",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6900
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Ruso Negro",
+    "name_en": "Ruso Negro",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      6500
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Summer Gin, Tropical Gin",
+    "name_en": "Summer Gin, Tropical Gin",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      7900
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "St. Germain Spritz",
+    "name_en": "St. Germain Spritz",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      9900
+    ],
+    "special": ""
+  },
+  {
+    "category": "clasicos",
+    "name": "Tequila Margarita",
+    "name_en": "Tequila Margarita",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "para-compartir",
+    "name": "Cocaína Rusa",
+    "name_en": "Russian Cocaine",
+    "description_es": "3 Shots de Vodka Stolichnaya, limón en rodaja con café y azúcar.",
+    "description_en": "Three Stolichnaya vodka shots, with lemon slices, coffee and sugar.",
+    "prices": [
+      6900
+    ],
+    "special": ""
+  },
+  {
+    "category": "para-compartir",
+    "name": "Golpeaditos",
+    "name_en": "Golpeaditos",
+    "description_es": "3 Shots de Tequila terminados con Sprite.",
+    "description_en": "3 tequila shots topped with Sprite.",
+    "prices": [
+      7500
+    ],
+    "special": ""
+  },
+  {
+    "category": "para-compartir",
+    "name": "Tequilazos",
+    "name_en": "Tequilazos",
+    "description_es": "3 Shots de Tequila, Limón y Sal.",
+    "description_en": "3 shots of tequila, lemon, and salt.",
+    "prices": [
+      5900
+    ],
+    "special": ""
+  },
+  {
+    "category": "para-compartir",
+    "name": "Jarra Borgoña / Jarra Sangría / Jarra Sangría Blanca",
+    "name_en": "Borgoña / Sangria / White Sangria Pitcher",
+    "description_es": "",
+    "description_en": "Choose from Borgoña, classic sangria or white sangria.",
+    "prices": [
+      11900
+    ],
+    "special": ""
+  },
+  {
+    "category": "sin-alcohol",
+    "name": "Bebidas",
+    "name_en": "Soft Drinks",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      3000
+    ],
+    "special": ""
+  },
+  {
+    "category": "sin-alcohol",
+    "name": "Jugos",
+    "name_en": "Juices",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      3900
+    ],
+    "special": ""
+  },
+  {
+    "category": "sin-alcohol",
+    "name": "Limonadas",
+    "name_en": "Lemonades",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      3500
+    ],
+    "special": ""
+  },
+  {
+    "category": "sin-alcohol",
+    "name": "Limonada Brasileña",
+    "name_en": "Brazilian Lemonade",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      3900
+    ],
+    "special": ""
+  },
+  {
+    "category": "sin-alcohol",
+    "name": "Red Bull",
+    "name_en": "Red Bull",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      3900
+    ],
+    "special": ""
+  },
+  {
+    "category": "sin-alcohol",
+    "name": "Agua Mineral",
+    "name_en": "Mineral Water",
+    "description_es": "",
+    "description_en": "",
+    "prices": [
+      1500
+    ],
+    "special": ""
+  },
+  {
+    "category": "cervezas",
+    "name": "Jester - Luptopia",
+    "name_en": "Jester - Luptopia",
+    "description_es": "Muy lupulada, intensa, cítrica, resinosa y herbal.",
+    "description_en": "Bold, hoppy, citrus-forward, resinous and herbal.",
+    "style": "Imperial IPA",
+    "abv": 9.0,
+    "ibu": 100,
+    "prices": [
+      5900,
+      6900
+    ],
+    "special": ""
+  },
+  {
+    "category": "cervezas",
+    "name": "Jester - Feierabend",
+    "name_en": "Jester - Feierabend",
+    "description_es": "Maltosa, pan tostado y caramelo suave.",
+    "description_en": "Malty with toasted bread and gentle caramel notes.",
+    "style": "Märzen Amber Lager",
+    "abv": 5.8,
+    "ibu": null,
+    "prices": [
+      3900,
+      4900
+    ],
+    "special": ""
+  },
+  {
+    "category": "cervezas",
+    "name": "Bundor - Belzeboo",
+    "name_en": "Bundor - Belzeboo",
+    "description_es": "Cacao, café, ciruelas y frutos secos; final intenso.",
+    "description_en": "Cocoa, coffee, plums and nuts; a bold finish.",
+    "style": "Imperial Stout",
+    "abv": 11.0,
+    "ibu": 40,
+    "prices": [
+      4500,
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "cervezas",
+    "name": "D'olbek - Maqui",
+    "name_en": "D'olbek - Maqui",
+    "description_es": "Maqui sureño, caramelo y suave agridulce.",
+    "description_en": "Southern Chilean maqui berries, caramel and a gentle bittersweet profile.",
+    "style": "Pale Ale con Maqui",
+    "abv": 5.8,
+    "ibu": null,
+    "prices": [
+      4500,
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "cervezas",
+    "name": "Coda - Cream Ale",
+    "name_en": "Coda - Cream Ale",
+    "description_es": "Suave, limpia, refrescante y con cuerpo.",
+    "description_en": "Clean, smooth, refreshing and fuller-bodied.",
+    "style": "Cream Ale",
+    "abv": 4.7,
+    "ibu": 18,
+    "prices": [
+      3900,
+      4900
+    ],
+    "special": ""
+  },
+  {
+    "category": "cervezas",
+    "name": "Tamango - Corta Corriente",
+    "name_en": "Tamango - Corta Corriente",
+    "description_es": "Jugosa, tropical: mango, piña, maracuyá y cítricos.",
+    "description_en": "Juicy and tropical: mango, pineapple, passion fruit and citrus.",
+    "style": "Hazy IPA",
+    "abv": 6.0,
+    "ibu": null,
+    "prices": [
+      5900,
+      6900
+    ],
+    "special": ""
+  },
+  {
+    "category": "cervezas",
+    "name": "Hathor - Estallida",
+    "name_en": "Hathor - Estallida",
+    "description_es": "Refrescante, afrutada y especiada; suave amargor.",
+    "description_en": "Refreshing, fruity and spiced with gentle bitterness.",
+    "style": "Weizen",
+    "abv": 4.5,
+    "ibu": 14,
+    "prices": [
+      3900,
+      4900
+    ],
+    "special": ""
+  },
+  {
+    "category": "cervezas",
+    "name": "Bundor - Troll",
+    "name_en": "Bundor - Troll",
+    "description_es": "Notas de cacao, cereal tostado, avena y café.",
+    "description_en": "Cocoa, toasted grains, oats and coffee notes.",
+    "style": "Oatmeal Stout",
+    "abv": 5.8,
+    "ibu": 33,
+    "prices": [
+      3900,
+      4900
+    ],
+    "special": ""
+  },
+  {
+    "category": "cervezas",
+    "name": "Horus - Isis",
+    "name_en": "Horus - Isis",
+    "description_es": "Cítrica y tropical, con amargor medio-alto.",
+    "description_en": "Citrusy and tropical, with medium-high bitterness.",
+    "style": "American IPA",
+    "abv": 7.0,
+    "ibu": 50,
+    "prices": [
+      4500,
+      5500
+    ],
+    "special": ""
+  },
+  {
+    "category": "cervezas",
+    "name": "Tübinger - Irish Red Ale",
+    "name_en": "Tübinger - Irish Red Ale",
+    "description_es": "Frutos rojos, caramelo, bizcocho y tostado suave.",
+    "description_en": "Red berries, caramel, biscuit and light toasty notes.",
+    "style": "Irish Red Ale",
+    "abv": 5.5,
+    "ibu": 27,
+    "prices": [
+      3900,
+      4900
+    ],
+    "special": ""
+  }
+]

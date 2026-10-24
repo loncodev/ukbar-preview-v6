@@ -1,0 +1,110 @@
+/* UK BAR · Digital Menu, V6. Production-oriented progressive enhancement,
+   two languages and 106 items sourced from owner's published menus.
+   Keep the approved rock-pub design; this page is a functional extension. */
+:root{--ink:#0b0707;--black:#150b0b;--paper:#ead7b5;--red:#e52841;--gold:#e1b783;--line:#664332;--hfont:"Roboto Slab",Rockwell,Georgia,serif;--font:"DM Sans",Arial,sans-serif;--condensed:"Barlow Condensed","Arial Narrow",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:36px}
+body{margin:0;background:#100909;color:#f2ddba;font:500 15px/1.55 var(--font)}
+a{color:inherit}
+button,input{font:inherit}
+button{cursor:pointer}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ffdf91;outline-offset:3px}
+.full-menu-skip{position:absolute;left:12px;top:-55px;z-index:100;background:#fae6c7;color:#100909;padding:12px 18px}
+.full-menu-skip:focus{top:12px}
+.full-menu-header{min-height:87px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px max(4.8%,calc((100vw - 1460px)/2));background:linear-gradient(90deg,#0d0909f5,#1b0c0cf9),url(assets/grain.webp) repeat;border-bottom:3px solid #873a2c;box-shadow:0 8px 24px #000a;position:relative;z-index:5}
+.full-menu-brand{display:flex;gap:12px;align-items:center;text-decoration:none}
+.full-menu-brand img{width:54px;height:54px;object-fit:contain}
+.full-menu-brand>span{font:900 31px/.9 var(--hfont);letter-spacing:-2px;color:#f9e9c9;white-space:nowrap}
+.full-menu-brand em{font-style:normal;color:var(--red)}
+.full-menu-brand small{display:block;margin-top:9px;color:var(--gold);font:900 9px var(--condensed);letter-spacing:3px}
+.full-menu-header nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.full-menu-header nav a{text-decoration:none;font:900 15px/1 var(--condensed);letter-spacing:1px;text-transform:uppercase}
+.full-menu-header nav a:hover{color:#f5b67d}
+.full-menu-header nav a:last-child{background:#b91431;padding:13px 16px;border:1px solid #ed3650}
+.full-menu-hero{background:linear-gradient(90deg,#0d0606ef,#110606a8 52%,#17090a31),url(assets/hero-v6.webp) center 43%/cover no-repeat;min-height:385px;display:flex;align-items:center;justify-content:space-between;padding:65px max(5%,calc((100vw - 1450px)/2));position:relative;isolation:isolate;overflow:hidden;border-bottom:5px solid #a34632}
+.full-menu-hero:before{content:"";position:absolute;inset:0;z-index:-1;background:url(assets/grain.webp) repeat;opacity:.12}
+.full-menu-hero-content{max-width:760px;position:relative;z-index:2}
+.full-menu-overline{font:900 14px var(--condensed);color:#eec18c;letter-spacing:4px}
+.full-menu-hero h1{font:900 clamp(65px,7.4vw,125px)/.97 var(--hfont);letter-spacing:-5px;color:#f6e4c7;text-shadow:4px 5px 0 #170908,0 10px 30px #000c;margin:24px 0}
+.full-menu-hero h1 em{font-style:normal;color:#f12d48}
+.full-menu-hero p{font-size:16px;color:#f1ddbe;max-width:600px;text-shadow:0 2px 9px #000;font-weight:600;line-height:1.85}
+.full-menu-back{display:inline-block;margin-top:12px;color:#fff3d7;font:900 15px var(--condensed);letter-spacing:1px;text-decoration:none;border-bottom:2px solid #d82b40;padding:5px 0}
+.full-menu-back:hover{border-color:#f9e3b8}
+.full-menu-hero-flourish{font:900 55px/.87 var(--hfont);color:#ecd2a4;border:5px double #d8a576;border-radius:50%;background:#1a0b0bce;box-shadow:0 6px 30px #0009;min-width:200px;min-height:200px;display:grid;place-content:center;text-align:center;transform:rotate(11deg);margin-right:4%}
+.full-menu-hero-flourish span{font-size:25px;color:#e7354a}
+.full-menu-panel{background:linear-gradient(180deg,#2c1712,#110a0b);padding:32px max(5%,calc((100vw - 1450px)/2)) 24px;border-bottom:2px solid #b77141;position:relative}
+.full-menu-source-note{font:700 12px/1.7 var(--font);color:#e8caa4;max-width:1200px;margin:0 0 24px}
+.full-menu-source-note span{color:#ed3649}
+.full-menu-tools{display:grid;grid-template-columns:minmax(280px,1fr) 1.1fr;gap:28px;align-items:end}
+.full-menu-tools>label{display:flex;flex-direction:column;gap:10px;font:900 14px var(--condensed);letter-spacing:1.2px;color:#f5dfb5}
+.full-menu-tools input[type=search]{min-width:0;min-height:52px;background:#120d0d;border:1px solid #a47e62;color:#ffebc8;border-radius:0;padding:12px 16px;font:600 16px var(--font);color-scheme:dark}
+.full-menu-tools input[type=search]::placeholder{color:#bcaa99}
+.full-menu-special{min-width:0;border:0;margin:0;padding:0;display:flex;align-items:center;gap:12px 16px;flex-wrap:wrap}
+.full-menu-special legend{display:block;width:100%;color:#f5dfb5;font:900 14px var(--condensed);letter-spacing:1.2px;margin-bottom:9px}
+.full-menu-special label{font:700 13px var(--font);display:flex;align-items:center;gap:7px;cursor:pointer;color:#ead3b3}
+.full-menu-special input{width:18px;height:18px;accent-color:#d82843;cursor:pointer}
+.full-menu-cat-label{font:900 12px var(--condensed);letter-spacing:2px;color:#dfb489;margin:26px 0 11px}
+.full-menu-categories{display:flex;gap:7px;overflow-x:auto;padding-bottom:6px;overscroll-behavior-x:contain;scrollbar-width:thin}
+.full-menu-cat{border:1px solid #755545;padding:10px 15px;white-space:nowrap;flex:0 0 auto;background:#190f0e;color:#f6dbba;font:900 14px var(--condensed);letter-spacing:.4px;min-height:44px}
+.full-menu-cat:hover,.full-menu-cat:focus-visible{background:#613025}
+.full-menu-cat.active{background:#b91931;border-color:#e64c55;color:white}
+.full-menu-results{padding:53px max(5%,calc((100vw - 1450px)/2)) 83px;background:linear-gradient(135deg,#100b0b,#1d100e 38%,#0b080a),url(assets/grain.webp)}
+.full-menu-results-bar{display:flex;align-items:end;justify-content:space-between;gap:18px;padding-bottom:18px;border-bottom:2px solid #966038;margin-bottom:23px}
+.full-menu-results-bar h2{font:900 clamp(34px,4.2vw,62px)/1 var(--hfont);letter-spacing:-2px;margin:0;color:#f5e2bf}
+.full-menu-results-bar>span{font:900 13px var(--condensed);letter-spacing:1.5px;color:#ecbb87;text-align:right}
+.full-menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.full-menu-product{border:1px solid #89573f;background:linear-gradient(150deg,#2c1712,#130c0c 76%);min-width:0;min-height:234px;padding:20px 20px 17px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:inset 0 0 0 1px #20100c,0 4px 15px #0003}
+.full-menu-product[hidden]{display:none}
+.full-menu-product-kicker{display:block;color:#d9a96f;font:900 12px var(--condensed);letter-spacing:1.5px}
+.full-menu-product h3{font:900 clamp(24px,2.15vw,31px)/1.05 var(--condensed);letter-spacing:.15px;margin:7px 0 9px;color:#f9e6c6;overflow-wrap:anywhere}
+.menu-diet-badge{display:inline-block;vertical-align:middle;margin-left:9px;padding:3px 6px;border:1px solid #c8b486;font:900 11px var(--condensed);letter-spacing:.7px;color:#dcd09f}
+.full-menu-description{font:500 13px/1.55 var(--font);color:#d9baa2;margin:0}
+.full-menu-prices{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;border-top:1px solid #68412f;padding-top:14px;margin-top:15px}
+.menu-price-pair{display:flex;flex-direction:column;gap:2px;min-width:65px}
+.menu-price-pair>span{color:#d9ae7e;font:900 11px/1.3 var(--condensed);letter-spacing:.25px;max-width:125px}
+.menu-price-pair>strong{color:#f4cb8d;font:900 20px/1 var(--condensed);white-space:nowrap}
+.menu-single-price{color:#f4cb8d;font:900 26px/1 var(--condensed)}
+.menu-beer-stats{color:#d5bc90;font:900 12px/1.4 var(--condensed);letter-spacing:.6px}
+.menu-beer-stats span{color:#e93e4e}
+.full-menu-noresults{padding:50px 20px;text-align:center;color:#f4dbb5;border:1px dashed #91664b}
+.full-menu-links{display:grid;grid-template-columns:1fr .8fr;gap:45px;background:linear-gradient(115deg,#371c18bd,#150909df),url(assets/british-wall.webp) center/cover;border-top:5px solid #a22a25;border-bottom:5px solid #432016;padding:68px max(5%,calc((100vw - 1450px)/2))}
+.full-menu-links h2{font:900 clamp(35px,4.2vw,63px)/1 var(--hfont);color:#f7e0b9;letter-spacing:-1.9px;margin:15px 0 22px}
+.full-menu-links p{font:600 14px/1.8 var(--font);color:#e2c4a1;max-width:700px}
+.full-menu-document-links{display:flex;flex-direction:column;gap:9px;justify-content:center}
+.full-menu-document-links a{text-decoration:none;padding:17px 18px;border:1px solid #b58a60;background:#1a0d0ee9;font:900 17px var(--condensed);letter-spacing:1.2px}
+.full-menu-document-links a:hover{background:#bf2039}
+.full-menu-footer{padding:35px max(5%,calc((100vw - 1450px)/2));color:#ecd4ad;background:#0b0808;display:flex;align-items:center;justify-content:space-between;gap:14px 28px;flex-wrap:wrap;font:800 12px var(--condensed);letter-spacing:1px}
+.full-menu-footer p{max-width:330px}
+.full-menu-footer a{padding:13px 17px;background:#b91630;text-decoration:none;color:#fff;font-size:14px}
+.full-menu-footer small{color:#bfad8f}
+@media(max-width:1200px){.full-menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.full-menu-hero-flourish{margin-right:0;width:150px;height:150px;min-width:150px;min-height:150px;font-size:41px}}
+@media(max-width:760px){
+ .full-menu-header{padding:10px 4%}.full-menu-header nav{gap:11px}.full-menu-header nav a{font-size:12px}.full-menu-header nav a:nth-child(2){display:none}
+ .full-menu-brand>span{font-size:25px}.full-menu-brand small{letter-spacing:1.8px;font-size:8px}
+ .full-menu-hero{min-height:375px;padding:48px 5%;background-position:67% center}
+ .full-menu-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#100708a9,#12080980);z-index:-1}
+ .full-menu-hero h1{font-size:clamp(50px,10.4vw,82px);letter-spacing:-2px}
+ .full-menu-hero p{font-size:14px}
+ .full-menu-hero-flourish{display:none}
+ .full-menu-tools{grid-template-columns:1fr;gap:25px}
+ .full-menu-results{padding:42px 5%}
+ .full-menu-results-bar{display:block}
+ .full-menu-results-bar>span{display:block;text-align:left;margin-top:12px}
+ .full-menu-links{grid-template-columns:1fr;padding:60px 5%}
+}
+@media(max-width:570px){
+ .full-menu-grid{grid-template-columns:1fr}
+ .full-menu-header{gap:9px}.full-menu-header nav{gap:9px}.full-menu-header nav a:first-child{display:none}
+ .full-menu-header nav a:last-child{padding:10px 12px}
+ .full-menu-brand img{width:43px;height:43px}
+ .full-menu-brand>span{font-size:21px}
+ .full-menu-hero{padding:45px 5%;min-height:345px}
+ .full-menu-hero h1{font-size:clamp(42px,10vw,64px)}
+ .full-menu-overline{font-size:11px;letter-spacing:2.5px}
+ .full-menu-cat{font-size:14px}
+ .full-menu-product{min-height:210px}
+ .full-menu-product h3{font-size:30px}
+ .full-menu-footer{display:block}.full-menu-footer>*{margin:12px 0;display:block}
+}
+@media(max-width:360px){.full-menu-brand small{display:none}.full-menu-brand>span{font-size:19px}.full-menu-header nav a{font-size:11px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
