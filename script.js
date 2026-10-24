@@ -19,7 +19,10 @@
     if (!mobileMenu.hidden && !mobileMenu.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
   });
   document.addEventListener('keydown', event => {
-    if (event.key === 'Escape') closeMenu();
+    if (event.key === 'Escape' && !mobileMenu.hidden) {
+      closeMenu();
+      menuButton.focus();
+    }
   });
 
   const tabs = [...document.querySelectorAll('.category-tab')];

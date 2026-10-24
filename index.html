@@ -23,7 +23,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media=&quot;all&quot;"><noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
-  <link rel="preload" href="assets/hero-v6.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="assets/hero-v6-mobile.webp" as="image" type="image/webp" media="(max-width: 620px)" fetchpriority="high">
+  <link rel="preload" href="assets/hero-v6.webp" as="image" type="image/webp" media="(min-width: 621px)" fetchpriority="high">
   <link rel="stylesheet" href="ukbar.min.css">
   <script src="ukbar.min.js" defer></script>
   <script type="application/ld+json" id="business-data">{
@@ -71,7 +72,7 @@
 
   <main id="main">
     <section class="hero pub-hero v5-hero v6-hero" id="inicio" aria-labelledby="hero-title">
-      <img class="v6-hero-bg" src="assets/hero-v6.webp" width="1680" height="840" alt="" decoding="async" fetchpriority="high">
+      <picture class="v6-hero-picture"><source media="(max-width: 620px)" type="image/webp" srcset="assets/hero-v6-mobile.webp"><img class="v6-hero-bg" src="assets/hero-v6.webp" width="1680" height="840" alt="" decoding="async" fetchpriority="high"></picture>
       <div class="v6-halftone" aria-hidden="true"></div>
       <div class="v6-pub-poster v6-poster-left" aria-hidden="true"><span>ROCK</span><b>CERVEZA<br>ARTESANAL</b><i>ALMA BRITÁNICA</i></div>
       <div class="v6-hero-content">
@@ -262,7 +263,7 @@
         <div class="visit-details">
           <div class="detail"><span>DÓNDE NOS ENCUENTRAS</span><strong>ALMIRANTE MONTT 129<br>VALPARAÍSO, CHILE</strong><a href="https://www.google.com/maps/search/?api=1&query=UK+Bar+Almirante+Montt+129+Valparaiso" target="_blank" rel="noopener noreferrer">CÓMO LLEGAR EN GOOGLE MAPS ↗</a></div>
           <div class="detail detail-hours"><span>HORARIOS DE ATENCIÓN</span>
-            <div class="hours-rows" aria-label="Horarios de atención de UK Bar">
+            <div class="hours-rows" role="group" aria-label="Horarios de atención de UK Bar">
               <div class="hours-row"><span>Lunes a jueves</span><strong>17:00 a 00:00</strong></div>
               <div class="hours-row"><span>Viernes y sábados</span><strong>17:00 a 02:00</strong></div>
               <div class="hours-row"><span>Domingo</span><strong>Cerrado</strong></div>
