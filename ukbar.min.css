@@ -7,3 +7,10 @@
 .menu-highlights-copy p{margin:0;max-width:660px;font:500 13px/1.65 var(--body);color:#e5c8a7}
 .menu-highlights-cta{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;padding:19px 22px!important;white-space:nowrap;text-align:center;font:900 13px/1.2 var(--display);letter-spacing:.6px}
 @media(max-width:810px){.menu-highlights-banner{flex-direction:column;align-items:stretch;gap:17px;padding:20px 18px;margin:23px 0 16px}.menu-highlights-cta{width:100%;white-space:normal}.menu-highlights-copy strong{font-size:clamp(23px,7vw,32px)}}
+
+/* Visible, accessible design attribution; not part of UK Bar's copyright. */
+.footer-credit{margin-top:17px;padding-top:13px;border-top:1px solid rgba(220,169,88,.28);text-align:right;font:600 12px/1.65 var(--body);letter-spacing:.2px;color:#e2c39e}
+.footer-credit a{color:#ffcf83;text-decoration:underline;text-underline-offset:3px;font-weight:800}
+.footer-credit a:hover,.footer-credit a:focus-visible{color:#fff0cd;text-decoration-thickness:2px}
+.footer-credit a:focus-visible{outline:2px solid #ffcf83;outline-offset:4px}
+@media(max-width:700px){.footer-credit{text-align:left;font-size:12px;padding-top:15px}}
