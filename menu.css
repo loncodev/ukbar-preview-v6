@@ -129,3 +129,17 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ffdf
  .full-menu-footer{padding-bottom:85px}
 }
 @media(max-width:355px){.full-menu-mobile-actions a{font-size:11px}}
+
+/* Menu: concise 12-at-a-time catalog, available in both languages. */
+.full-menu-cat-count{display:inline-block;margin-left:8px;padding:2px 7px;border:1px solid #a37955;border-radius:999px;color:#efc996;font:900 11px/1.2 var(--condensed);vertical-align:middle}
+.full-menu-cat.active .full-menu-cat-count{border-color:#ffe1ac;color:#fff0d5}
+.full-menu-pager{display:flex;flex-direction:column;align-items:center;gap:17px;padding:27px 0 7px;margin-top:18px;border-top:1px solid #664332}
+.full-menu-pager[hidden]{display:none}
+.full-menu-progress{height:6px;width:min(100%,360px);background:#563127;border-radius:999px;overflow:hidden}
+.full-menu-progress span{display:block;height:100%;background:linear-gradient(90deg,#d52a3c,#e2b572);border-radius:999px;transition:width .2s ease}
+.full-menu-more{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:15px 32px;border:1px solid #ee4354;background:#bc1831;color:#fff1db;font:900 19px/1 var(--condensed);letter-spacing:.9px;box-shadow:0 4px 0 #601321}
+.full-menu-more:hover{background:#df2441}
+.full-menu-more:focus-visible{outline:3px solid #ffe0a0;outline-offset:3px}
+@media(max-width:570px){.full-menu-pager{padding-top:22px}.full-menu-more{width:100%;min-height:54px}.full-menu-cat-count{margin-left:5px;padding:2px 6px}}
+@media(prefers-reduced-motion:reduce){.full-menu-progress span{transition:none}}
+
