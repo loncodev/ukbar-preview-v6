@@ -25,8 +25,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media=&quot;all&quot;"><noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
   <link rel="preload" href="../assets/hero-v6-mobile.webp" as="image" type="image/webp" media="(max-width: 620px)" fetchpriority="high">
   <link rel="preload" href="../assets/hero-v6.webp" as="image" type="image/webp" media="(min-width: 621px)" fetchpriority="high">
-  <link rel="stylesheet" href="../ukbar.min.css?v=reviews20261029">
+  <link rel="stylesheet" href="../ukbar.min.css?v=feedback20261029">
   <script src="../ukbar.min.js?v=gallery8" defer></script>
+  <script src="../sugerencias.js?v=feedback20261029" defer></script>
   <script type="application/ld+json" id="business-data">{
   "@context": "https://schema.org",
   "@type": "Restaurant",
@@ -93,7 +94,7 @@
     <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
   </header>
   <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
-    <a href="#inicio">HOME</a><a href="#elbar">THE PUB</a><a href="menu/">MENU</a><a href="#tapwall">BEER</a><a href="#galeria">GALLERY</a><a href="#ambiente">ATMOSPHERE</a><a href="#visitanos">VISIT US</a>
+    <a href="#inicio">HOME</a><a href="#elbar">THE PUB</a><a href="menu/">MENU</a><a href="#tapwall">BEER</a><a href="#galeria">GALLERY</a><a href="#ambiente">ATMOSPHERE</a><a href="#visitanos">VISIT US</a><a href="#sugerencias">SUGGESTIONS</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3SAMyted1qxLxRD5GVT5lrSHHYBTZ5Grac81x-aX2-lOyBA/viewform" target="_blank" rel="noopener noreferrer">BOOK A TABLE ↗</a>
     <a href="../" hreflang="es-CL" lang="es">VERSIÓN EN ESPAÑOL / ES ↗</a>
   </nav>
@@ -427,6 +428,26 @@
         </div>
       </div>
     </section>
+    <section id="sugerencias" class="uk-feedback-section section-padding" aria-labelledby="uk-feedback-heading">
+      <div class="section-index"><span>07 / YOUR IDEAS</span><span>PRIVATE FEEDBACK</span></div>
+      <div class="uk-feedback-grid">
+        <div class="uk-feedback-copy">
+          <span class="uk-feedback-kicker">HELP SHAPE WHAT COMES NEXT</span>
+          <h2 id="uk-feedback-heading">WHAT WOULD YOU <em>LIKE TO SEE?</em></h2>
+          <p>A new beer brand? A dish for the menu? Music or decor ideas? Tell us what would make your next visit even better.</p>
+          <p class="uk-feedback-points">Your message goes privately to the UK Bar team. It is not posted here or on Google Maps.</p>
+        </div>
+        <form id="uk-feedback-form" class="uk-feedback-card" method="post" action="#sugerencias" data-preview="true" accept-charset="UTF-8">
+          <label for="uk-feedback-comment">YOUR SUGGESTION</label>
+          <textarea id="uk-feedback-comment" name="suggestion" rows="5" minlength="5" maxlength="1000" required placeholder="For example: I would love to see more stouts, a vegetarian option or a different playlist…"></textarea>
+          <div class="uk-feedback-honeypot" aria-hidden="true"><label for="uk-feedback-website">Website</label><input id="uk-feedback-website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
+          <input type="hidden" name="lang" value="en">
+          <div class="uk-feedback-form-meta"><span>One comment, no name or email required. Please do not include personal information.</span><output class="uk-feedback-count" id="uk-feedback-count" for="uk-feedback-comment">0 / 1000</output></div>
+          <button class="uk-feedback-submit" type="submit">SEND PRIVATE SUGGESTION ↗</button>
+          <p id="uk-feedback-status" class="uk-feedback-status" role="status" aria-live="polite">Preview only: suggestions are not saved here.</p>
+        </form>
+      </div>
+    </section>
   </main>
   <nav class="mobile-action-bar" aria-label="Quick actions">
     <a href="menu/" aria-label="Go to the menu">MENU</a>
@@ -434,7 +455,7 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3SAMyted1qxLxRD5GVT5lrSHHYBTZ5Grac81x-aX2-lOyBA/viewform" target="_blank" rel="noopener noreferrer">BOOK A TABLE ↗</a>
   </nav>
   <footer class="footer">
-    <div class="footer-top"><div><img src="../assets/logo-ukbar.webp" alt="" loading="lazy" width="72" height="72"><strong>UK<span>BAR.</span></strong><p>BRITISH ROCK, GOOD FOOD<br>AND GREAT COMPANY.</p></div><nav aria-label="Footer links"><a href="#elbar">THE PUB</a><a href="menu/">THE MENU</a><a href="#galeria">GALLERY</a><a href="#ambiente">ATMOSPHERE</a><a href="https://www.instagram.com/ukbarvalpo/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="#visitanos">CONTACT ↗</a></nav></div>
+    <div class="footer-top"><div><img src="../assets/logo-ukbar.webp" alt="" loading="lazy" width="72" height="72"><strong>UK<span>BAR.</span></strong><p>BRITISH ROCK, GOOD FOOD<br>AND GREAT COMPANY.</p></div><nav aria-label="Footer links"><a href="#elbar">THE PUB</a><a href="menu/">THE MENU</a><a href="#galeria">GALLERY</a><a href="#ambiente">ATMOSPHERE</a><a href="https://www.instagram.com/ukbarvalpo/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="#visitanos">CONTACT ↗</a><a href="#sugerencias">SUGGESTIONS ↗</a></nav></div>
     <div class="footer-bottom"><span class="footer-hours">TUE–THU 5 PM–MIDNIGHT · FRI–SAT 5 PM–2 AM · SUN &amp; MON CLOSED</span><span>© <span id="year">2026</span> UK BAR · PREVIEW FOR REVIEW · NOT THE OFFICIAL WEBSITE</span><a href="#inicio">BACK TO TOP ↑</a></div>
     <div class="footer-credit">Website developed by <a href="https://www.solus.cl" target="_blank" rel="noopener noreferrer" aria-label="Solus website at www.solus.cl">Solus · www.solus.cl ↗</a></div>
   </footer>

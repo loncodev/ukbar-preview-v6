@@ -25,8 +25,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media=&quot;all&quot;"><noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
   <link rel="preload" href="assets/hero-v6-mobile.webp" as="image" type="image/webp" media="(max-width: 620px)" fetchpriority="high">
   <link rel="preload" href="assets/hero-v6.webp" as="image" type="image/webp" media="(min-width: 621px)" fetchpriority="high">
-  <link rel="stylesheet" href="ukbar.min.css?v=reviews20261029">
+  <link rel="stylesheet" href="ukbar.min.css?v=feedback20261029">
   <script src="ukbar.min.js?v=gallery8" defer></script>
+  <script src="sugerencias.js?v=feedback20261029" defer></script>
   <script type="application/ld+json" id="business-data">{
   "@context": "https://schema.org",
   "@type": "Restaurant",
@@ -93,7 +94,7 @@
     <button class="menu-toggle" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
   </header>
   <nav class="mobile-menu" id="mobile-menu" aria-label="Navegación móvil" hidden>
-    <a href="#inicio">INICIO</a><a href="#elbar">EL BAR</a><a href="carta/">CARTA</a><a href="#tapwall">CERVEZAS</a><a href="#galeria">GALERÍA</a><a href="#ambiente">AMBIENTE</a><a href="#visitanos">VISÍTANOS</a>
+    <a href="#inicio">INICIO</a><a href="#elbar">EL BAR</a><a href="carta/">CARTA</a><a href="#tapwall">CERVEZAS</a><a href="#galeria">GALERÍA</a><a href="#ambiente">AMBIENTE</a><a href="#visitanos">VISÍTANOS</a><a href="#sugerencias">SUGERENCIAS</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3SAMyted1qxLxRD5GVT5lrSHHYBTZ5Grac81x-aX2-lOyBA/viewform" target="_blank" rel="noopener noreferrer">RESERVAR MESA ↗</a>
     <a href="en/" hreflang="en" lang="en">ENGLISH VERSION / EN ↗</a>
   </nav>
@@ -427,6 +428,26 @@
         </div>
       </div>
     </section>
+    <section id="sugerencias" class="uk-feedback-section section-padding" aria-labelledby="uk-feedback-heading">
+      <div class="section-index"><span>07 / TUS IDEAS</span><span>CANAL PRIVADO</span></div>
+      <div class="uk-feedback-grid">
+        <div class="uk-feedback-copy">
+          <span class="uk-feedback-kicker">AYÚDANOS A MEJORAR</span>
+          <h2 id="uk-feedback-heading">¿QUÉ TE GUSTARÍA <em>VER EN UK BAR?</em></h2>
+          <p>¿Una nueva marca de cerveza? ¿Algún plato para la carta? ¿Ideas para la música o la ambientación? Cuéntanos qué te gustaría encontrar.</p>
+          <p class="uk-feedback-points">Tu mensaje llega de forma privada al equipo de UK Bar. No se publica aquí ni en Google Maps.</p>
+        </div>
+        <form id="uk-feedback-form" class="uk-feedback-card" method="post" action="#sugerencias" data-preview="true" accept-charset="UTF-8">
+          <label for="uk-feedback-comment">ESCRIBE TU SUGERENCIA</label>
+          <textarea id="uk-feedback-comment" name="suggestion" rows="5" minlength="5" maxlength="1000" required placeholder="Por ejemplo: me gustaría encontrar más stout, una opción vegetariana o una nueva playlist…"></textarea>
+          <div class="uk-feedback-honeypot" aria-hidden="true"><label for="uk-feedback-website">Website</label><input id="uk-feedback-website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
+          <input type="hidden" name="lang" value="es">
+          <div class="uk-feedback-form-meta"><span>Un solo comentario, sin nombre ni correo. Evita incluir datos personales.</span><output class="uk-feedback-count" id="uk-feedback-count" for="uk-feedback-comment">0 / 1000</output></div>
+          <button class="uk-feedback-submit" type="submit">ENVIAR SUGERENCIA PRIVADA ↗</button>
+          <p id="uk-feedback-status" class="uk-feedback-status" role="status" aria-live="polite">Vista previa: aquí no se reciben comentarios.</p>
+        </form>
+      </div>
+    </section>
   </main>
   <nav class="mobile-action-bar" aria-label="Accesos rápidos">
     <a href="carta/" aria-label="Ir a la carta">CARTA</a>
@@ -434,7 +455,7 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3SAMyted1qxLxRD5GVT5lrSHHYBTZ5Grac81x-aX2-lOyBA/viewform" target="_blank" rel="noopener noreferrer">RESERVAR MESA ↗</a>
   </nav>
   <footer class="footer">
-    <div class="footer-top"><div><img src="assets/logo-ukbar.webp" alt="" loading="lazy" width="72" height="72"><strong>UK<span>BAR.</span></strong><p>ROCK BRITÁNICO, BUENA COMIDA<br>Y BUENA COMPAÑÍA.</p></div><nav aria-label="Enlaces del pie"><a href="#elbar">EL BAR</a><a href="carta/">LA CARTA</a><a href="#galeria">GALERÍA</a><a href="#ambiente">AMBIENTE</a><a href="https://www.instagram.com/ukbarvalpo/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="#visitanos">CONTACTO ↗</a></nav></div>
+    <div class="footer-top"><div><img src="assets/logo-ukbar.webp" alt="" loading="lazy" width="72" height="72"><strong>UK<span>BAR.</span></strong><p>ROCK BRITÁNICO, BUENA COMIDA<br>Y BUENA COMPAÑÍA.</p></div><nav aria-label="Enlaces del pie"><a href="#elbar">EL BAR</a><a href="carta/">LA CARTA</a><a href="#galeria">GALERÍA</a><a href="#ambiente">AMBIENTE</a><a href="https://www.instagram.com/ukbarvalpo/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="#visitanos">CONTACTO ↗</a><a href="#sugerencias">SUGERENCIAS ↗</a></nav></div>
     <div class="footer-bottom"><span class="footer-hours">MAR–JUE 17:00–00:00 · VIE–SÁB 17:00–02:00 · DOM Y LUN CERRADO</span><span>© <span id="year">2026</span> UK BAR · PROPUESTA PARA REVISIÓN · NO ES EL SITIO OFICIAL</span><a href="#inicio">VOLVER ARRIBA ↑</a></div>
     <div class="footer-credit">Sitio web desarrollado por <a href="https://www.solus.cl" target="_blank" rel="noopener noreferrer" aria-label="Sitio web de Solus: www.solus.cl">Solus · www.solus.cl ↗</a></div>
   </footer>
